@@ -1,0 +1,171 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nitrous Data</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static\css\success.css?ver=100">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #337ab7;">
+        <a class="navbar-brand" href="/" style="color:white;">N<sub>2</sub>O</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/" style="color:white;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                Add
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/newhosp">New Hospital</a>
+                <a class="dropdown-item" href="/newpurchase">New Purchase</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/edit" style="color:white;">Edit</a>
+            </li>
+            </ul>
+        </div>
+    </nav>  
+  
+  
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+              <h1>Hospital Successfully Added</h1>
+            </div>
+          </div>
+        
+        <div class="row">
+
+            <div class="col-md-12 data-box">
+                
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr class="name-heading">
+                        <td id="name" colspan="12"><h3>{{data[0]}}</h3></td>
+                    </tr>
+
+                    <tr class="heading">
+                        <td colspan="12">Location</td>
+                    </tr>
+
+                        <tr class="details">
+                            <td id="address"><b>Address:</b> {{data[1]}}</td>
+                            <td id="suburb"><b>Suburb:</b> {{data[2]}}</td>
+                        </tr>
+
+                        <tr class="details text-center">
+                            <td id="postcode" width="33%"><b>Postcode:</b> {{data[3]}}</td>
+                            <td id="state" width="33%"><b>State:</b> {{data[4]}}</td>
+                            <td id="country" width="33%"><b>Country:</b> {{data[5]}}</td>
+                        </tr>
+
+                        <tr class="details">
+                            <td id="lat"><b>Latitude:</b> {{data[6]}}</td>
+                            <td id="long"><b>Longitude:</b> {{data[7]}}</td>
+                        </tr>
+
+                    <tr class="heading">
+                        <td colspan="12">Demographics</td>
+                    </tr>
+
+                        <tr class="details">
+                            <td id="pub_priv"><b>Public/Private:</b> {{data[8]}}</td>
+                            <td id="area"><b>Area:</b> {{data[8]}}</td>
+                        </tr>
+                        <tr class="details">
+                            <td><b><u>Casemix</h5></u></b>
+                        </tr>
+                        <tr class="details">
+                            <td id="adult"><b>Adult:</b> {{data[10]}}</td>
+                            <td id="obs"><b>Obstetric:</b> {{data[11]}}</td>
+                        </tr>
+                        <tr class="details">
+                            <td id="paeds"><b>Paediatrics:</b> {{data[12]}}</td>
+                            <td id="burns"><b>Burns:</b> {{data[13]}}</td>
+                        </tr>
+
+                    <tr class="heading">
+                        <td colspan="12">Hospital Manifold System</td>
+                    </tr>
+
+                        <tr class="details">
+                            <td colspan="12"><b><u>Number of bottles as at {{manifold_data[4]}}</u></b></td>
+                        </tr>
+                        <tr class="details">
+                            <td id="f8"><b>F8 (233kg):</b> {{manifold_data[1]}}</td>
+                            <td id="f9"><b>F9 (223kg):</b> {{manifold_data[2]}}</td>
+                            <td id="g"><b>F8 (36.6kg):</b> {{manifold_data[3]}}</td>
+                        </tr>
+                        <tr class="details">
+                            <td id="supplier"><b>Gas Supplier:</b> {{data[14]}}</td>
+                        </tr>
+                        <tr class="details">
+                            <td id="supplier"><b>Pipeline  Maintainance:</b> {{data[15]}}</td>
+                        </tr>
+                        <tr class="details">
+                            <td id="supplier"><b><u>Nitrous Piping Diagram</b></u></td>
+                        </tr>
+                        <tr class="details">
+                            <td id="supplier"><b>Available:</b> {{data[16]}}</td>
+                            <td id="supplier"><b>Show Outlets:</b> {{data[17]}}</td>
+                        </tr>
+
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!-- My scripts -->
+  <script type="text/javascript" src="static/js/confirmation.js"></script> 
+  <script type="text/javascript">
+      var data = {{ data|tojson }};
+      var manifold_data = {{manifold_data|tojson}}
+      console.log(data)
+      console.log(manifold_data)
+  </script>
+
+  
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add Hospital Data</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #337ab7;">
+    <a class="navbar-brand" href="/" style="color:white;">N<sub>2</sub>O</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/" style="color:white;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+            Add
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/newhosp">New Hospital</a>
+            <a class="dropdown-item" href="/newpurchase">New Purchase</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/edit" style="color:white;">Edit</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+  <div class="container" id="formContainer">
+    
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Enter New Hospital</h1>
+        <p>Use the form below to add a new hospital to the database</p>
+      </div>
+    </div>
+    
+    <form id="myForm" action="/submitData" method="POST">
+           
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <legend>Hospital Location</legend>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+            <div class="card card-block text-center" id="failure" style="display: none;">
+              <span id="errorHosp"></span>
+              <span id="whatError"></span>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="form-row">
+        
+        <!-- Autocomplete Hospital Name -->
+        <div class="form-group col-md-12"> 
+          <div class = "autocomplete"  style="width:50%">
+            <label for="inputHospital" style="text-align: left">Hospital Name</label>
+            <input name="hospital" type="text" class="form-control" id="inputHospital" placeholder="Start typing to find hospital">
+          </div>    
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        
+        <div class="form-group col-md-6">
+          <label for="inputStreet">Address</label>
+          <input name="street" type="text" class="form-control" id="inputStreet" placeholder="Street Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputSuburb">Suburb</label>
+          <input name="suburb" type="text" class="form-control" id="inputSuburb" placeholder="Suburb">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputState">Postcode</label>
+          <input name="postcode" type="text" class="form-control" id="inputPostcode" placeholder="Postcode">
+        </div>  
+
+      </div>
+      
+      <div class="form-row">
+      
+        <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+            <input name="state" type="text" class="form-control" id="inputState" placeholder="State">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputCountry">Country</label>
+          <input name="country" type="text" class="form-control" id="inputCountry" placeholder="Country">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputLat">Latitude</label>
+          <input name="lat" type="text" class="form-control" id="inputLat" placeholder="Lat">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputLong">Longitude</label>
+          <input name="long" type="text" class="form-control" id="inputLong" placeholder="Long">
+        </div>
+
+      </div>
+
+      <!-- Line separating sections -->
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <hr>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <legend>Hospital Demographics</legend>
+        </div>
+      </div>
+
+
+      <!-- Radioboxes -->
+      <div class="form-row">
+        
+        <!-- Hospital Type -->
+        <div class="col-md-4">
+          <label class="header-label">Public / Private</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios1" id="publicRadio" value="public" checked>
+            <label class="form-check-label" for="publicRadio">
+              Public
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios1" id="privateRadio" value="private">
+            <label class="form-check-label" for="privateRadio">
+              Private
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios1" id="mixedRadio" value="mixed">
+            <label class="form-check-label" for="mixedRadio">
+              Mixed public / private
+            </label>
+          </div>
+        </div>
+
+        <!-- Metro vs Regional -->
+        <div class="col-md-4">
+          <label class="header-label">Location</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios2" id="metroRadio" value="metro" checked>
+            <label class="form-check-label" for="metroRadio">
+              Metro
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios2" id="regionalRadio" value="regional">
+            <label class="form-check-label" for="regionalRadio">
+              Regional
+            </label>
+          </div>
+        </div>
+
+        <!-- Case Mix -->
+        <div class="col-md-4">
+          <label class="header-label">Case Mix</label>
+          <div class="form-group row">
+            <label class="col-sm-6 col-form-label" for="adultInput">Adult</label>
+            <div class="col-sm-5">
+              <input name="adult" type="number" class="form-control" id="adultInput" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-6 col-form-label" for="obstetricInput">Obstetric</label>
+            <div class="col-sm-5">
+              <input name="obs" type="number" class="form-control" id="obstetricInput" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-6 col-form-label" for="paedsInput">Paediatric (<18yr)</label>
+            <div class="col-sm-5">
+              <input name="paeds" type="number" class="form-control" id="paedsInput" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-6 col-form-label" for="burnsInput">Burns</label>
+            <div class="col-sm-5">
+              <input name="burns" type="number" class="form-control" id="burnsInput" placeholder="0" value="0">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Line separating sections -->
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <hr>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <legend>Hospital Manifold System</legend>
+        </div>
+      </div>
+
+      <div class="form-row">
+        
+        <!-- Number of cylinders -->
+        <div class="col-md-3">
+          <label class="header-label">Total number of bottles <br>
+                 connected to manifold</label>
+          <div class="form-group row">
+            <label class="col-sm-5 col-form-label" for="f8">F8 (233kg)</label>
+            <div class="col-sm-4">
+              <input name="F8" type="number" class="form-control" id="f8" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-5 col-form-label" for="f9">F9 (223kg)</label>
+            <div class="col-sm-4">
+              <input name="F9" type="number" class="form-control" id="f9" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-5 col-form-label" for="g">G (36.6kg)</label>
+            <div class="col-sm-4">
+              <input name="G" type="number" class="form-control" id="g" placeholder="0" value="0">
+            </div>
+          </div>
+          <div class="form-group row"> <!-- Date input -->
+            <label class="col-sm-5 control-label" for="date">Current Date</label>
+            <div class="col-sm-6">
+              <input class="form-control" id="date" name="date" placeholder="DD/MM/YYY" type="text"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supplier -->
+        <div class="col-md-3">
+          <label class="header-label">Gas Supplier</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios3" id="bocRadio" value="boc" checked>
+            <label class="form-check-label" for="bocRadio">
+              BOC
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios3" id="airLiquidRadio" value="air">
+            <label class="form-check-label" for="airLiquidRadio">
+              AirLiquid
+            </label>
+          </div>
+        </div>
+
+        <!-- Maintenance -->
+        <div class="col-md-3">
+          <label class="header-label">Pipeline Maintenance</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios4" id="bocMaintainRadio" value="boc" checked>
+            <label class="form-check-label" for="bocMaintainRadio">
+              BOC
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios4" id="airMaintainRadio" value="air">
+            <label class="form-check-label" for="airMaintainRadio">
+              AirLiquid
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios4" id="hospMaintainRadio" value="hosp">
+            <label class="form-check-label" for="hospMaintainRadio">
+              Hospital Engineering
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios4" id="nilMaintainRadio" value="nil">
+            <label class="form-check-label" for="nilMaintainRadio">
+              Nil
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios4" id="unknownMaintainRadio" value="unknown">
+            <label class="form-check-label" for="unknownMaintainRadio">
+              Unknown
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label class="header-label">Nitrous Piping Diagram</label>
+          <div class="row">
+              <div class="col-md-6">
+                  <label>Available?</label>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios5" id="available" value="yes">
+                      <label class="form-check-label" for="available">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios5" id="not_available" value="no" checked>
+                      <label class="form-check-label" for="not_available">
+                          No
+                      </label>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <label>Shows Outlets?</label>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios6" id="shows" value="yes">
+                      <label class="form-check-label" for="shows">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios6" id="doesnt_show" value="no" checked>
+                      <label class="form-check-label" for="doesnt_show">
+                          No
+                      </label>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Line separating sections -->
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <hr>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12 text-center">
+          <button type="submit" class="btn btn-primary" id="submit-hosp">Submit</button>
+        </div>
+      </div>
+   
+   
+    
+    </form>
+    
+    
+
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!-- My scripts -->
+  <script src="./static/js/addHospital.js"></script>
+  <script src="./static/js/autoComplete.js"></script>
+
+  <!-- Bootstrap Date-Picker Plugin -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+
+  <script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+  </script>
+
+  <script type="text/javascript">
+      alert = {{ alert|tojson }}
+      console.log(alert[0])
+      console.log(alert[1])
+
+  </script>
+
+
+
+</body>
+
+</html>
+
+

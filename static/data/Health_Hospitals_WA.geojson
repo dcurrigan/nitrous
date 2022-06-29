@@ -1,0 +1,2406 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "Health_Hospitals_HEALTH_001",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.865791748, -31.95421351 ]
+			},
+			"properties" : {
+				"estab_id" : 101,
+				"establishment_name" : "Royal Perth Hospital",
+				"address" : "Wellington Street",
+				"suburb" : "PERTH",
+				"postcode" : "6000",
+				"type" : "Public",
+				"object_id" : 1
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.751437624, -32.05841811 ]
+			},
+			"properties" : {
+				"estab_id" : 102,
+				"establishment_name" : "Fremantle Hospital",
+				"address" : "Alma Street",
+				"suburb" : "FREMANTLE",
+				"postcode" : "6160",
+				"type" : "Public",
+				"object_id" : 2
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.818289129, -31.949912761 ]
+			},
+			"properties" : {
+				"estab_id" : 104,
+				"establishment_name" : "King Edward Memorial Hospital For Women",
+				"address" : "374 Bagot Road",
+				"suburb" : "SUBIACO",
+				"postcode" : "6008",
+				"type" : "Public",
+				"object_id" : 3
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.814946136, -31.967909471 ]
+			},
+			"properties" : {
+				"estab_id" : 105,
+				"establishment_name" : "Sir Charles Gairdner Hospital",
+				"address" : "Hospital Avenue",
+				"suburb" : "NEDLANDS",
+				"postcode" : "6009",
+				"type" : "Public",
+				"object_id" : 4
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.84640279, -32.070170568 ]
+			},
+			"properties" : {
+				"estab_id" : 106,
+				"establishment_name" : "Fiona Stanley Hospital",
+				"address" : "11 Robin Warren Drive",
+				"suburb" : "MURDOCH",
+				"postcode" : "6150",
+				"type" : "Public",
+				"object_id" : 5
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.814943755, -31.967911801 ]
+			},
+			"properties" : {
+				"estab_id" : 107,
+				"establishment_name" : "Perth Children's Hospital",
+				"address" : "15 Hospital Avenue",
+				"suburb" : "NEDLANDS",
+				"postcode" : "6009",
+				"type" : "Public",
+				"object_id" : 6
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 125.562763246, -18.192121381 ]
+			},
+			"properties" : {
+				"estab_id" : 127,
+				"establishment_name" : "Fitzroy Crossing Hospital",
+				"address" : "Fallon Road",
+				"suburb" : "FITZROY CROSSING",
+				"postcode" : "6765",
+				"type" : "Public",
+				"object_id" : 7
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 127.666275875, -18.226173721 ]
+			},
+			"properties" : {
+				"estab_id" : 128,
+				"establishment_name" : "Halls Creek Hospital",
+				"address" : "70 Roberta Avenue",
+				"suburb" : "HALLS CREEK",
+				"postcode" : "6770",
+				"type" : "Public",
+				"object_id" : 8
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.598187446, -20.413527309 ]
+			},
+			"properties" : {
+				"estab_id" : 131,
+				"establishment_name" : "Hedland Health Campus",
+				"address" : "2-34 Colebatch Way",
+				"suburb" : "SOUTH HEDLAND",
+				"postcode" : "6722",
+				"type" : "Public",
+				"object_id" : 9
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.839511971, -20.732170651 ]
+			},
+			"properties" : {
+				"estab_id" : 132,
+				"establishment_name" : "Karratha Health Campus",
+				"address" : "Cnr. Balmoral and Warambie Roads",
+				"suburb" : "PEGS CREEK",
+				"postcode" : "6714",
+				"type" : "Public",
+				"object_id" : 10
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.790956894, -31.963439242 ]
+			},
+			"properties" : {
+				"estab_id" : 135,
+				"establishment_name" : "State Forensic Mental Health Service",
+				"address" : "Frankland Centre, Brockway Road",
+				"suburb" : "MOUNT CLAREMONT",
+				"postcode" : "6010",
+				"type" : "Public",
+				"object_id" : 11
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.802799157, -31.95534643 ]
+			},
+			"properties" : {
+				"estab_id" : 158,
+				"establishment_name" : "Selby Inpatient Unit (MHS)",
+				"address" : "2 Selby Street",
+				"suburb" : "SHENTON PARK",
+				"postcode" : "6008",
+				"type" : "Public",
+				"object_id" : 12
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.904788864, -35.003312571 ]
+			},
+			"properties" : {
+				"estab_id" : 201,
+				"establishment_name" : "Albany Hospital",
+				"address" : "Warden Avenue",
+				"suburb" : "ALBANY",
+				"postcode" : "6330",
+				"type" : "Public",
+				"object_id" : 13
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.02088225, -32.132859371 ]
+			},
+			"properties" : {
+				"estab_id" : 203,
+				"establishment_name" : "Armadale-Kelmscott Memorial Hospital",
+				"address" : "3056 Albany Highway",
+				"suburb" : "MOUNT NASURA",
+				"postcode" : "6112",
+				"type" : "Public",
+				"object_id" : 14
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.157502303, -34.30541859 ]
+			},
+			"properties" : {
+				"estab_id" : 204,
+				"establishment_name" : "Augusta Hospital",
+				"address" : "Donovan Street",
+				"suburb" : "AUGUSTA",
+				"postcode" : "6290",
+				"type" : "Public",
+				"object_id" : 15
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 122.236570584, -17.960434293 ]
+			},
+			"properties" : {
+				"estab_id" : 206,
+				"establishment_name" : "Broome Hospital",
+				"address" : "Robinson Street",
+				"suburb" : "BROOME",
+				"postcode" : "6725",
+				"type" : "Public",
+				"object_id" : 16
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.648266395, -33.366838003 ]
+			},
+			"properties" : {
+				"estab_id" : 208,
+				"establishment_name" : "Bunbury Hospital",
+				"address" : "Bussell Highway (Cnr. Robertson Drive)",
+				"suburb" : "BUNBURY",
+				"postcode" : "6230",
+				"type" : "Public",
+				"object_id" : 17
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.319577076, -33.654129482 ]
+			},
+			"properties" : {
+				"estab_id" : 209,
+				"establishment_name" : "Busselton Hospital",
+				"address" : "Mill Road",
+				"suburb" : "BUSSELTON",
+				"postcode" : "6280",
+				"type" : "Public",
+				"object_id" : 18
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.658971164, -24.886895622 ]
+			},
+			"properties" : {
+				"estab_id" : 210,
+				"establishment_name" : "Carnarvon Hospital",
+				"address" : "Cleaver Street",
+				"suburb" : "CARNARVON",
+				"postcode" : "6701",
+				"type" : "Public",
+				"object_id" : 19
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.162366942, -33.351447541 ]
+			},
+			"properties" : {
+				"estab_id" : 211,
+				"establishment_name" : "Collie Hospital",
+				"address" : "Deakin Street",
+				"suburb" : "COLLIE",
+				"postcode" : "6225",
+				"type" : "Public",
+				"object_id" : 20
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.358126268, -34.956132383 ]
+			},
+			"properties" : {
+				"estab_id" : 214,
+				"establishment_name" : "Denmark Hospital",
+				"address" : "50 Scotsdale Road",
+				"suburb" : "DENMARK",
+				"postcode" : "6333",
+				"type" : "Public",
+				"object_id" : 21
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 123.633048888, -17.306062816 ]
+			},
+			"properties" : {
+				"estab_id" : 215,
+				"establishment_name" : "Derby Hospital",
+				"address" : "Clarendon Street",
+				"suburb" : "DERBY",
+				"postcode" : "6728",
+				"type" : "Public",
+				"object_id" : 22
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.892177083, -33.856105586 ]
+			},
+			"properties" : {
+				"estab_id" : 218,
+				"establishment_name" : "Esperance Hospital",
+				"address" : "Hicks Street",
+				"suburb" : "ESPERANCE",
+				"postcode" : "6450",
+				"type" : "Public",
+				"object_id" : 23
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.120382498, -21.928680944 ]
+			},
+			"properties" : {
+				"estab_id" : 219,
+				"establishment_name" : "Exmouth Hospital",
+				"address" : "Lyons Street",
+				"suburb" : "EXMOUTH",
+				"postcode" : "6707",
+				"type" : "Public",
+				"object_id" : 24
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.611302815, -28.783626684 ]
+			},
+			"properties" : {
+				"estab_id" : 220,
+				"establishment_name" : "Geraldton Hospital",
+				"address" : "Shenton Street",
+				"suburb" : "GERALDTON",
+				"postcode" : "6530",
+				"type" : "Public",
+				"object_id" : 25
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.470445111, -30.740925576 ]
+			},
+			"properties" : {
+				"estab_id" : 226,
+				"establishment_name" : "Kalgoorlie Hospital",
+				"address" : "Piccadilly Street",
+				"suburb" : "KALGOORLIE",
+				"postcode" : "6430",
+				"type" : "Public",
+				"object_id" : 26
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.563801568, -33.68280262 ]
+			},
+			"properties" : {
+				"estab_id" : 227,
+				"establishment_name" : "Katanning Hospital",
+				"address" : "Clive Street",
+				"suburb" : "KATANNING",
+				"postcode" : "6317",
+				"type" : "Public",
+				"object_id" : 27
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.452714733, -33.102525611 ]
+			},
+			"properties" : {
+				"estab_id" : 230,
+				"establishment_name" : "Lake Grace Hospital",
+				"address" : "Stubbs Street",
+				"suburb" : "LAKE GRACE",
+				"postcode" : "6353",
+				"type" : "Public",
+				"object_id" : 28
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.743332467, -21.173457648 ]
+			},
+			"properties" : {
+				"estab_id" : 232,
+				"establishment_name" : "Marble Bar Nursing Post",
+				"address" : "Station St.",
+				"suburb" : "MARBLE BAR",
+				"postcode" : "6760",
+				"type" : "Public",
+				"object_id" : 29
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.071113793, -33.952097898 ]
+			},
+			"properties" : {
+				"estab_id" : 233,
+				"establishment_name" : "Margaret River Hospital",
+				"address" : "Farrelly Street",
+				"suburb" : "MARGARET RIVER",
+				"postcode" : "6285",
+				"type" : "Public",
+				"object_id" : 30
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.491326176, -26.591146439 ]
+			},
+			"properties" : {
+				"estab_id" : 234,
+				"establishment_name" : "Meekatharra Hospital",
+				"address" : "Savage Street",
+				"suburb" : "MEEKATHARRA",
+				"postcode" : "6642",
+				"type" : "Public",
+				"object_id" : 31
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.276405523, -31.485292307 ]
+			},
+			"properties" : {
+				"estab_id" : 235,
+				"establishment_name" : "Merredin Hospital",
+				"address" : "Kitchener Road",
+				"suburb" : "MERREDIN",
+				"postcode" : "6415",
+				"type" : "Public",
+				"object_id" : 32
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.168920821, -32.936330423 ]
+			},
+			"properties" : {
+				"estab_id" : 236,
+				"establishment_name" : "Narrogin Hospital",
+				"address" : "Williams Road",
+				"suburb" : "NARROGIN",
+				"postcode" : "6312",
+				"type" : "Public",
+				"object_id" : 33
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.657293553, -31.649548941 ]
+			},
+			"properties" : {
+				"estab_id" : 237,
+				"establishment_name" : "Northam Hospital",
+				"address" : "Robinson Street",
+				"suburb" : "NORTHAM",
+				"postcode" : "6401",
+				"type" : "Public",
+				"object_id" : 34
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.115616359, -21.643020646 ]
+			},
+			"properties" : {
+				"estab_id" : 238,
+				"establishment_name" : "Onslow Health Service",
+				"address" : "Second Avenue",
+				"suburb" : "ONSLOW",
+				"postcode" : "6710",
+				"type" : "Public",
+				"object_id" : 35
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.803910772, -31.88688914 ]
+			},
+			"properties" : {
+				"estab_id" : 239,
+				"establishment_name" : "Osborne Park Hospital",
+				"address" : "Osborne Place",
+				"suburb" : "STIRLING",
+				"postcode" : "6021",
+				"type" : "Public",
+				"object_id" : 36
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.144032887, -20.776324586 ]
+			},
+			"properties" : {
+				"estab_id" : 243,
+				"establishment_name" : "Roebourne Hospital",
+				"address" : "42-44 Hampton Street",
+				"suburb" : "ROEBOURNE",
+				"postcode" : "6718",
+				"type" : "Public",
+				"object_id" : 37
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.3476356, -33.304483524 ]
+			},
+			"properties" : {
+				"estab_id" : 245,
+				"establishment_name" : "Wagin Hospital",
+				"address" : "Warwick Street",
+				"suburb" : "WAGIN",
+				"postcode" : "6315",
+				"type" : "Public",
+				"object_id" : 38
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 128.127978913, -15.479040065 ]
+			},
+			"properties" : {
+				"estab_id" : 249,
+				"establishment_name" : "Wyndham Hospital",
+				"address" : "Lot 1270 Minderoo Road",
+				"suburb" : "WYNDHAM",
+				"postcode" : "6740",
+				"type" : "Public",
+				"object_id" : 39
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.757889486, -31.894226708 ]
+			},
+			"properties" : {
+				"estab_id" : 251,
+				"establishment_name" : "York Hospital",
+				"address" : "Trews Road",
+				"suburb" : "YORK",
+				"postcode" : "6302",
+				"type" : "Public",
+				"object_id" : 40
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.927575249, -32.005523259 ]
+			},
+			"properties" : {
+				"estab_id" : 255,
+				"establishment_name" : "Bentley Hospital",
+				"address" : "33 Mills Street",
+				"suburb" : "BENTLEY",
+				"postcode" : "6102",
+				"type" : "Public",
+				"object_id" : 41
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.790191053, -22.695384304 ]
+			},
+			"properties" : {
+				"estab_id" : 256,
+				"establishment_name" : "Tom Price Hospital",
+				"address" : "Mine Road",
+				"suburb" : "TOM PRICE",
+				"postcode" : "6751",
+				"type" : "Public",
+				"object_id" : 42
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 128.733827709, -15.775214108 ]
+			},
+			"properties" : {
+				"estab_id" : 257,
+				"establishment_name" : "Kununurra Hospital",
+				"address" : "96 Coolibah Drive",
+				"suburb" : "KUNUNURRA",
+				"postcode" : "6743",
+				"type" : "Public",
+				"object_id" : 43
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.736925921, -23.354760541 ]
+			},
+			"properties" : {
+				"estab_id" : 260,
+				"establishment_name" : "Newman Hospital",
+				"address" : "Mindarra Drive",
+				"suburb" : "NEWMAN",
+				"postcode" : "6753",
+				"type" : "Public",
+				"object_id" : 44
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.142105639, -20.673989795 ]
+			},
+			"properties" : {
+				"estab_id" : 266,
+				"establishment_name" : "Wickham Health Centre",
+				"address" : "Mulga Way",
+				"suburb" : "WICKHAM",
+				"postcode" : "6720",
+				"type" : "Public",
+				"object_id" : 45
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.670461149, -23.203178548 ]
+			},
+			"properties" : {
+				"estab_id" : 267,
+				"establishment_name" : "Paraburdoo Hospital",
+				"address" : "Rocklea Road",
+				"suburb" : "PARABURDOO",
+				"postcode" : "6754",
+				"type" : "Public",
+				"object_id" : 46
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.816932945, -33.576496452 ]
+			},
+			"properties" : {
+				"estab_id" : 271,
+				"establishment_name" : "Donnybrook Hospital",
+				"address" : "Bentley Street",
+				"suburb" : "DONNYBROOK",
+				"postcode" : "6239",
+				"type" : "Public",
+				"object_id" : 47
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 122.400067603, -28.626532398 ]
+			},
+			"properties" : {
+				"estab_id" : 272,
+				"establishment_name" : "Laverton Hospital",
+				"address" : "Beria Road",
+				"suburb" : "LAVERTON",
+				"postcode" : "6440",
+				"type" : "Public",
+				"object_id" : 48
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.337506411, -28.894330966 ]
+			},
+			"properties" : {
+				"estab_id" : 273,
+				"establishment_name" : "Leonora Hospital",
+				"address" : "Sadie Canning Drive",
+				"suburb" : "LEONORA",
+				"postcode" : "6438",
+				"type" : "Public",
+				"object_id" : 49
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 120.224180638, -26.592517871 ]
+			},
+			"properties" : {
+				"estab_id" : 274,
+				"establishment_name" : "Wiluna Nursing Post",
+				"address" : "Thompson Street",
+				"suburb" : "WILUNA",
+				"postcode" : "6646",
+				"type" : "Public",
+				"object_id" : 50
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.844470062, -28.065801943 ]
+			},
+			"properties" : {
+				"estab_id" : 275,
+				"establishment_name" : "Mount Magnet Nursing Post",
+				"address" : "Lot 4536, Criddle Street",
+				"suburb" : "MOUNT MAGNET",
+				"postcode" : "6638",
+				"type" : "Public",
+				"object_id" : 51
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.771423585, -32.290591708 ]
+			},
+			"properties" : {
+				"estab_id" : 277,
+				"establishment_name" : "Rockingham General Hospital",
+				"address" : "Elanora Drive",
+				"suburb" : "COOLOONGUP",
+				"postcode" : "6168",
+				"type" : "Public",
+				"object_id" : 52
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.687984728, -32.224527527 ]
+			},
+			"properties" : {
+				"estab_id" : 281,
+				"establishment_name" : "Stirling Naval Base Hospital",
+				"address" : "",
+				"suburb" : "GARDEN ISLAND",
+				"postcode" : "6168",
+				"type" : "Commonwealth",
+				"object_id" : 53
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.062022696, -32.710507458 ]
+			},
+			"properties" : {
+				"estab_id" : 350,
+				"establishment_name" : "Dwellingup Nursing Post",
+				"address" : "Lot 154 Banksiadale Road",
+				"suburb" : "DWELLINGUP",
+				"postcode" : "6213",
+				"type" : "Public",
+				"object_id" : 54
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.123027975, -34.635307429 ]
+			},
+			"properties" : {
+				"estab_id" : 351,
+				"establishment_name" : "Northcliffe Nursing Post",
+				"address" : "Wheatley Coast Road",
+				"suburb" : "NORTHCLIFFE",
+				"postcode" : "6262",
+				"type" : "Public",
+				"object_id" : 55
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.620055492, -31.20906673 ]
+			},
+			"properties" : {
+				"estab_id" : 352,
+				"establishment_name" : "Kambalda Nursing Post",
+				"address" : "Gumnut Place",
+				"suburb" : "KAMBALDA",
+				"postcode" : "6442",
+				"type" : "Public",
+				"object_id" : 56
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.023535311, -29.688645391 ]
+			},
+			"properties" : {
+				"estab_id" : 353,
+				"establishment_name" : "Menzies Nursing Post",
+				"address" : "Sandstone Road",
+				"suburb" : "MENZIES",
+				"postcode" : "6436",
+				"type" : "Public",
+				"object_id" : 57
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 122.2257358, -21.710086329 ]
+			},
+			"properties" : {
+				"estab_id" : 354,
+				"establishment_name" : "Telfer Nursing Post",
+				"address" : "Telfer Medical Centre",
+				"suburb" : "TELFER",
+				"postcode" : "6762",
+				"type" : "Public",
+				"object_id" : 58
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.207303683, -30.916474529 ]
+			},
+			"properties" : {
+				"estab_id" : 355,
+				"establishment_name" : "Mukinbudin Health Centre",
+				"address" : "10-12 Calder Street",
+				"suburb" : "MUKINBUDIN",
+				"postcode" : "6479",
+				"type" : "Public",
+				"object_id" : 59
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.083959753, -33.186821112 ]
+			},
+			"properties" : {
+				"estab_id" : 356,
+				"establishment_name" : "Kukerin Nursing Post",
+				"address" : "Manser Street",
+				"suburb" : "KUKERIN",
+				"postcode" : "6352",
+				"type" : "Public",
+				"object_id" : 60
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.897890945, -27.42172395 ]
+			},
+			"properties" : {
+				"estab_id" : 357,
+				"establishment_name" : "Cue Nursing Post",
+				"address" : "310 Victoria Street",
+				"suburb" : "CUE",
+				"postcode" : "6640",
+				"type" : "Public",
+				"object_id" : 61
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.301035219, -27.995461426 ]
+			},
+			"properties" : {
+				"estab_id" : 358,
+				"establishment_name" : "Sandstone Nursing Post",
+				"address" : "Hack Street",
+				"suburb" : "SANDSTONE",
+				"postcode" : "6639",
+				"type" : "Public",
+				"object_id" : 62
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.6829304, -28.343855487 ]
+			},
+			"properties" : {
+				"estab_id" : 359,
+				"establishment_name" : "Yalgoo Nursing Post",
+				"address" : "Stanley Street",
+				"suburb" : "YALGOO",
+				"postcode" : "6635",
+				"type" : "Public",
+				"object_id" : 63
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.512639877, -32.006079642 ]
+			},
+			"properties" : {
+				"estab_id" : 367,
+				"establishment_name" : "Rottnest Island Nursing Post",
+				"address" : "2 Abbott Street",
+				"suburb" : "ROTTNEST ISLAND",
+				"postcode" : "6161",
+				"type" : "Public",
+				"object_id" : 64
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.923058608, -32.102798453 ]
+			},
+			"properties" : {
+				"estab_id" : 401,
+				"establishment_name" : "Beverley Hospital",
+				"address" : "Sewell Street",
+				"suburb" : "BEVERLEY",
+				"postcode" : "6304",
+				"type" : "Public",
+				"object_id" : 65
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.476145698, -32.803721985 ]
+			},
+			"properties" : {
+				"estab_id" : 402,
+				"establishment_name" : "Boddington Hospital",
+				"address" : "Hotham Avenue",
+				"suburb" : "BODDINGTON",
+				"postcode" : "6390",
+				"type" : "Public",
+				"object_id" : 66
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.146510441, -31.873113442 ]
+			},
+			"properties" : {
+				"estab_id" : 403,
+				"establishment_name" : "Bruce Rock Memorial Hospital",
+				"address" : "35 Dunstall Street",
+				"suburb" : "BRUCE ROCK",
+				"postcode" : "6418",
+				"type" : "Public",
+				"object_id" : 67
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.878863986, -32.324177589 ]
+			},
+			"properties" : {
+				"estab_id" : 404,
+				"establishment_name" : "Corrigin Hospital",
+				"address" : "49 Kirkwood Street",
+				"suburb" : "CORRIGIN",
+				"postcode" : "6375",
+				"type" : "Public",
+				"object_id" : 68
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.239893642, -31.649511031 ]
+			},
+			"properties" : {
+				"estab_id" : 405,
+				"establishment_name" : "Cunderdin Health Centre",
+				"address" : "55 Lundy Avenue",
+				"suburb" : "CUNDERDIN",
+				"postcode" : "6407",
+				"type" : "Public",
+				"object_id" : 69
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.657116698, -30.277345613 ]
+			},
+			"properties" : {
+				"estab_id" : 406,
+				"establishment_name" : "Dalwallinu Hospital",
+				"address" : "Myers Street",
+				"suburb" : "DALWALLINU",
+				"postcode" : "6609",
+				"type" : "Public",
+				"object_id" : 70
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.740482398, -33.310262199 ]
+			},
+			"properties" : {
+				"estab_id" : 408,
+				"establishment_name" : "Dumbleyung Memorial Hospital",
+				"address" : "McIntyre Street",
+				"suburb" : "DUMBLEYUNG",
+				"postcode" : "6350",
+				"type" : "Public",
+				"object_id" : 71
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.717529214, -31.628734999 ]
+			},
+			"properties" : {
+				"estab_id" : 409,
+				"establishment_name" : "Kellerberrin Memorial Hospital",
+				"address" : "51-63 Gregory Street",
+				"suburb" : "KELLERBERRIN",
+				"postcode" : "6410",
+				"type" : "Public",
+				"object_id" : 72
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.002635759, -33.930117128 ]
+			},
+			"properties" : {
+				"estab_id" : 410,
+				"establishment_name" : "Gnowangerup Hospital",
+				"address" : "Yougenup Road",
+				"suburb" : "GNOWANGERUP",
+				"postcode" : "6335",
+				"type" : "Public",
+				"object_id" : 73
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.831393362, -31.303824484 ]
+			},
+			"properties" : {
+				"estab_id" : 411,
+				"establishment_name" : "Goomalling Hospital",
+				"address" : "Forrest Street",
+				"suburb" : "GOOMALLING",
+				"postcode" : "6460",
+				"type" : "Public",
+				"object_id" : 74
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.896873585, -33.077290158 ]
+			},
+			"properties" : {
+				"estab_id" : 412,
+				"establishment_name" : "Harvey Hospital",
+				"address" : "45 Hayward Street",
+				"suburb" : "HARVEY",
+				"postcode" : "6220",
+				"type" : "Public",
+				"object_id" : 75
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.265704366, -32.488956669 ]
+			},
+			"properties" : {
+				"estab_id" : 413,
+				"establishment_name" : "Kondinin Hospital",
+				"address" : "Graham Street",
+				"suburb" : "KONDININ",
+				"postcode" : "6367",
+				"type" : "Public",
+				"object_id" : 76
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.923027501, -31.109268552 ]
+			},
+			"properties" : {
+				"estab_id" : 414,
+				"establishment_name" : "Kununoppin Hospital",
+				"address" : "Leake Street",
+				"suburb" : "KUNUNOPPIN",
+				"postcode" : "6489",
+				"type" : "Public",
+				"object_id" : 77
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.000735031, -30.639409043 ]
+			},
+			"properties" : {
+				"estab_id" : 417,
+				"establishment_name" : "Moora Hospital",
+				"address" : "Dandaragan Street",
+				"suburb" : "MOORA",
+				"postcode" : "6510",
+				"type" : "Public",
+				"object_id" : 78
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.002774571, -29.212664774 ]
+			},
+			"properties" : {
+				"estab_id" : 418,
+				"establishment_name" : "Morawa Hospital",
+				"address" : "Caulfield Road",
+				"suburb" : "MORAWA",
+				"postcode" : "6623",
+				"type" : "Public",
+				"object_id" : 79
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.50996658, -28.535552052 ]
+			},
+			"properties" : {
+				"estab_id" : 419,
+				"establishment_name" : "Mullewa Hospital",
+				"address" : "Elder Street",
+				"suburb" : "MULLEWA",
+				"postcode" : "6630",
+				"type" : "Public",
+				"object_id" : 80
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.870700876, -32.638766492 ]
+			},
+			"properties" : {
+				"estab_id" : 420,
+				"establishment_name" : "Murray District Hospital",
+				"address" : "McKay Street",
+				"suburb" : "PINJARRA",
+				"postcode" : "6208",
+				"type" : "Public",
+				"object_id" : 81
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.76749429, -33.982778325 ]
+			},
+			"properties" : {
+				"estab_id" : 422,
+				"establishment_name" : "Nannup Hospital",
+				"address" : "Carey Street",
+				"suburb" : "NANNUP",
+				"postcode" : "6275",
+				"type" : "Public",
+				"object_id" : 82
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.391243033, -32.06166098 ]
+			},
+			"properties" : {
+				"estab_id" : 423,
+				"establishment_name" : "Narembeen Memorial Hospital",
+				"address" : "Ada Street",
+				"suburb" : "NAREMBEEN",
+				"postcode" : "6369",
+				"type" : "Public",
+				"object_id" : 83
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.767706627, -32.19993951 ]
+			},
+			"properties" : {
+				"estab_id" : 424,
+				"establishment_name" : "Norseman Hospital",
+				"address" : "Talbot Street",
+				"suburb" : "NORSEMAN",
+				"postcode" : "6443",
+				"type" : "Public",
+				"object_id" : 84
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.63519542, -28.351012093 ]
+			},
+			"properties" : {
+				"estab_id" : 425,
+				"establishment_name" : "Northampton Hospital",
+				"address" : "Stephen Street",
+				"suburb" : "NORTHAMPTON",
+				"postcode" : "6535",
+				"type" : "Public",
+				"object_id" : 85
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.759190573, -29.534394816 ]
+			},
+			"properties" : {
+				"estab_id" : 426,
+				"establishment_name" : "North Midlands Hospital",
+				"address" : "Thomas Street",
+				"suburb" : "THREE SPRINGS",
+				"postcode" : "6519",
+				"type" : "Public",
+				"object_id" : 86
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.031775069, -34.44505347 ]
+			},
+			"properties" : {
+				"estab_id" : 427,
+				"establishment_name" : "Pemberton Hospital",
+				"address" : "Railway Crescent",
+				"suburb" : "PEMBERTON",
+				"postcode" : "6260",
+				"type" : "Public",
+				"object_id" : 87
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.086297179, -32.531705273 ]
+			},
+			"properties" : {
+				"estab_id" : 428,
+				"establishment_name" : "Pingelly Health Centre",
+				"address" : "38 Stratford Street",
+				"suburb" : "PINGELLY",
+				"postcode" : "6308",
+				"type" : "Public",
+				"object_id" : 88
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.653909365, -34.625788193 ]
+			},
+			"properties" : {
+				"estab_id" : 429,
+				"establishment_name" : "Plantagenet Hospital",
+				"address" : "Langton Road",
+				"suburb" : "MOUNT BARKER",
+				"postcode" : "6324",
+				"type" : "Public",
+				"object_id" : 89
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 120.045947138, -33.585040398 ]
+			},
+			"properties" : {
+				"estab_id" : 430,
+				"establishment_name" : "Ravensthorpe Hospital",
+				"address" : "Martin Street",
+				"suburb" : "RAVENSTHORPE",
+				"postcode" : "6346",
+				"type" : "Public",
+				"object_id" : 90
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.33801037, -31.231423203 ]
+			},
+			"properties" : {
+				"estab_id" : 431,
+				"establishment_name" : "Southern Cross Hospital",
+				"address" : "Coolgardie Road",
+				"suburb" : "SOUTHERN CROSS",
+				"postcode" : "6426",
+				"type" : "Public",
+				"object_id" : 91
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.391581574, -33.839308515 ]
+			},
+			"properties" : {
+				"estab_id" : 432,
+				"establishment_name" : "Boyup Brook Soldiers Memorial Hospital",
+				"address" : "Hospital Drive",
+				"suburb" : "BOYUP BROOK",
+				"postcode" : "6244",
+				"type" : "Public",
+				"object_id" : 92
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.153773276, -34.241302563 ]
+			},
+			"properties" : {
+				"estab_id" : 433,
+				"establishment_name" : "Warren Hospital",
+				"address" : "Hospital Avenue",
+				"suburb" : "MANJIMUP",
+				"postcode" : "6258",
+				"type" : "Public",
+				"object_id" : 93
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.497850109, -32.782001449 ]
+			},
+			"properties" : {
+				"estab_id" : 434,
+				"establishment_name" : "Wickepin Nursing Post",
+				"address" : "Wogolin Road",
+				"suburb" : "WICKEPIN",
+				"postcode" : "6370",
+				"type" : "Public",
+				"object_id" : 94
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.883558326, -33.023931594 ]
+			},
+			"properties" : {
+				"estab_id" : 436,
+				"establishment_name" : "Williams Nursing Post",
+				"address" : "42 Adams Street",
+				"suburb" : "WILLIAMS",
+				"postcode" : "6391",
+				"type" : "Public",
+				"object_id" : 95
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.725498668, -30.894270548 ]
+			},
+			"properties" : {
+				"estab_id" : 437,
+				"establishment_name" : "Wongan Hills Hospital",
+				"address" : "Ackland Street",
+				"suburb" : "WONGAN HILLS",
+				"postcode" : "6603",
+				"type" : "Public",
+				"object_id" : 96
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.386306978, -31.176408797 ]
+			},
+			"properties" : {
+				"estab_id" : 438,
+				"establishment_name" : "Wyalkatchem-Koorda and Districts Hospital",
+				"address" : "Honour Avenue",
+				"suburb" : "WYALKATCHEM",
+				"postcode" : "6485",
+				"type" : "Public",
+				"object_id" : 97
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.915354975, -33.941089398 ]
+			},
+			"properties" : {
+				"estab_id" : 441,
+				"establishment_name" : "Jerramungup Nursing Post",
+				"address" : "Kokoda Road",
+				"suburb" : "JERRAMUNGUP",
+				"postcode" : "6337",
+				"type" : "Public",
+				"object_id" : 98
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.64224191, -34.045076093 ]
+			},
+			"properties" : {
+				"estab_id" : 442,
+				"establishment_name" : "Tambellup Nursing Post",
+				"address" : "30 Norrish St.",
+				"suburb" : "TAMBELLUP",
+				"postcode" : "6320",
+				"type" : "Public",
+				"object_id" : 99
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.132169089, -33.951077567 ]
+			},
+			"properties" : {
+				"estab_id" : 444,
+				"establishment_name" : "Bridgetown Hospital",
+				"address" : "Peninsula Road",
+				"suburb" : "BRIDGETOWN",
+				"postcode" : "6255",
+				"type" : "Public",
+				"object_id" : 100
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.152971917, -33.829279444 ]
+			},
+			"properties" : {
+				"estab_id" : 445,
+				"establishment_name" : "Kojonup Hospital",
+				"address" : "Spring Street",
+				"suburb" : "KOJONUP",
+				"postcode" : "6395",
+				"type" : "Public",
+				"object_id" : 101
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.40270209, -32.01472411 ]
+			},
+			"properties" : {
+				"estab_id" : 446,
+				"establishment_name" : "Quairading Hospital",
+				"address" : "Harris Street",
+				"suburb" : "QUAIRADING",
+				"postcode" : "6383",
+				"type" : "Public",
+				"object_id" : 102
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.060628583, -31.966696555 ]
+			},
+			"properties" : {
+				"estab_id" : 454,
+				"establishment_name" : "Kalamunda District Community Hospital",
+				"address" : "Elizabeth Street",
+				"suburb" : "KALAMUNDA",
+				"postcode" : "6076",
+				"type" : "Public",
+				"object_id" : 103
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.869180858, -31.953381052 ]
+			},
+			"properties" : {
+				"estab_id" : 459,
+				"establishment_name" : "Next Step Drug and Alcohol Services, East Perth",
+				"address" : "32 Moore Street",
+				"suburb" : "EAST PERTH",
+				"postcode" : "6004",
+				"type" : "Public",
+				"object_id" : 104
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.161642698, -27.712889784 ]
+			},
+			"properties" : {
+				"estab_id" : 475,
+				"establishment_name" : "Kalbarri Health Centre",
+				"address" : "Kaiber Street",
+				"suburb" : "KALBARRI",
+				"postcode" : "6536",
+				"type" : "Public",
+				"object_id" : 105
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.934144081, -29.265159052 ]
+			},
+			"properties" : {
+				"estab_id" : 476,
+				"establishment_name" : "Dongara Health Centre",
+				"address" : "48 Blenheim Road",
+				"suburb" : "PORT DENISON",
+				"postcode" : "6525",
+				"type" : "Public",
+				"object_id" : 106
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.77881141, -31.987837607 ]
+			},
+			"properties" : {
+				"estab_id" : 602,
+				"establishment_name" : "Bethesda Hospital",
+				"address" : "25 Queenslea Drive",
+				"suburb" : "CLAREMONT",
+				"postcode" : "6010",
+				"type" : "Private",
+				"object_id" : 107
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.874387082, -31.934325687 ]
+			},
+			"properties" : {
+				"estab_id" : 607,
+				"establishment_name" : "The Park Private Hospital",
+				"address" : "14 Alvan Street",
+				"suburb" : "MOUNT LAWLEY",
+				"postcode" : "6050",
+				"type" : "Private",
+				"object_id" : 108
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.845184618, -31.958875703 ]
+			},
+			"properties" : {
+				"estab_id" : 608,
+				"establishment_name" : "Mount Hospital",
+				"address" : "150 Mounts Bay Road",
+				"suburb" : "PERTH",
+				"postcode" : "6000",
+				"type" : "Private",
+				"object_id" : 109
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.648255645, -33.366843623 ]
+			},
+			"properties" : {
+				"estab_id" : 612,
+				"establishment_name" : "St John of God Bunbury Hospital",
+				"address" : "Cnr Robertson Drive & Bussell Highway",
+				"suburb" : "BUNBURY",
+				"postcode" : "6230",
+				"type" : "Private",
+				"object_id" : 110
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 114.615933206, -28.783957691 ]
+			},
+			"properties" : {
+				"estab_id" : 613,
+				"establishment_name" : "St John of God Geraldton Hospital",
+				"address" : "12 Hermitage Street",
+				"suburb" : "GERALDTON",
+				"postcode" : "6530",
+				"type" : "Private",
+				"object_id" : 111
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.825180973, -31.941625813 ]
+			},
+			"properties" : {
+				"estab_id" : 616,
+				"establishment_name" : "St John of God Subiaco Hospital",
+				"address" : "12 Salvado Road",
+				"suburb" : "SUBIACO",
+				"postcode" : "6008",
+				"type" : "Private",
+				"object_id" : 112
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.863766897, -31.98806895 ]
+			},
+			"properties" : {
+				"estab_id" : 618,
+				"establishment_name" : "South Perth Hospital",
+				"address" : "76 South Terrace",
+				"suburb" : "SOUTH PERTH",
+				"postcode" : "6151",
+				"type" : "Private",
+				"object_id" : 113
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.810675867, -32.029711454 ]
+			},
+			"properties" : {
+				"estab_id" : 623,
+				"establishment_name" : "Attadale Rehabilitation Hospital",
+				"address" : "21 Hislop Road",
+				"suburb" : "ATTADALE",
+				"postcode" : "6156",
+				"type" : "Private",
+				"object_id" : 114
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.837396098, -31.940982432 ]
+			},
+			"properties" : {
+				"estab_id" : 626,
+				"establishment_name" : "Abbotsford Private Hospital",
+				"address" : "61-69 Cambridge Street",
+				"suburb" : "WEST LEEDERVILLE",
+				"postcode" : "6007",
+				"type" : "Private",
+				"object_id" : 115
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.884973628, -31.936743075 ]
+			},
+			"properties" : {
+				"estab_id" : 629,
+				"establishment_name" : "St John of God Mt Lawley Hospital",
+				"address" : "Cnr Ellesmere Road and Thirlmere Road",
+				"suburb" : "MOUNT LAWLEY",
+				"postcode" : "6050",
+				"type" : "Private",
+				"object_id" : 116
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.784198356, -31.8340286 ]
+			},
+			"properties" : {
+				"estab_id" : 633,
+				"establishment_name" : "Glengarry Hospital",
+				"address" : "53 Arnisdale Road",
+				"suburb" : "DUNCRAIG",
+				"postcode" : "6023",
+				"type" : "Private",
+				"object_id" : 117
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.763157834, -32.310538442 ]
+			},
+			"properties" : {
+				"estab_id" : 639,
+				"establishment_name" : "Waikiki Private Hospital",
+				"address" : "221 Willmott Drive",
+				"suburb" : "WAIKIKI",
+				"postcode" : "6169",
+				"type" : "Private",
+				"object_id" : 118
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.844714847, -32.068658781 ]
+			},
+			"properties" : {
+				"estab_id" : 640,
+				"establishment_name" : "St John of God Murdoch Hospital",
+				"address" : "100 Murdoch Drive",
+				"suburb" : "MURDOCH",
+				"postcode" : "6150",
+				"type" : "Private",
+				"object_id" : 119
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.810693849, -31.969886032 ]
+			},
+			"properties" : {
+				"estab_id" : 641,
+				"establishment_name" : "Hollywood Private Hospital",
+				"address" : "Monash Avenue",
+				"suburb" : "NEDLANDS",
+				"postcode" : "6009",
+				"type" : "Private",
+				"object_id" : 120
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.77171601, -31.736247565 ]
+			},
+			"properties" : {
+				"estab_id" : 642,
+				"establishment_name" : "Joondalup Health Campus",
+				"address" : "Cnr Grand Blvd & Shenton Ave",
+				"suburb" : "JOONDALUP",
+				"postcode" : "6027",
+				"type" : "Private",
+				"object_id" : 121
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.843140808, -31.950861525 ]
+			},
+			"properties" : {
+				"estab_id" : 643,
+				"establishment_name" : "Perth Clinic",
+				"address" : "29 Havelock St.",
+				"suburb" : "WEST PERTH",
+				"postcode" : "6005",
+				"type" : "Private",
+				"object_id" : 122
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.764352222, -32.53300294 ]
+			},
+			"properties" : {
+				"estab_id" : 645,
+				"establishment_name" : "Peel Health Campus",
+				"address" : "110 Lakes Road",
+				"suburb" : "MANDURAH",
+				"postcode" : "6210",
+				"type" : "Private",
+				"object_id" : 123
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.811149748, -31.905744963 ]
+			},
+			"properties" : {
+				"estab_id" : 652,
+				"establishment_name" : "Silver Chain Hospital at Home",
+				"address" : "6 Sundercombe Street",
+				"suburb" : "OSBORNE PARK",
+				"postcode" : "6017",
+				"type" : "Private",
+				"object_id" : 124
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.823991936, -31.941087751 ]
+			},
+			"properties" : {
+				"estab_id" : 653,
+				"establishment_name" : "Marian Centre",
+				"address" : "187 Cambridge Street",
+				"suburb" : "WEMBLEY",
+				"postcode" : "6014",
+				"type" : "Private",
+				"object_id" : 125
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.82416073, -31.942393156 ]
+			},
+			"properties" : {
+				"estab_id" : 661,
+				"establishment_name" : "Subiaco Private Hospital",
+				"address" : "Ground Floor Suite F and Level 1, 1 Salvado Road",
+				"suburb" : "SUBIACO",
+				"postcode" : "6008",
+				"type" : "Private",
+				"object_id" : 126
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 117.906980997, -35.003889054 ]
+			},
+			"properties" : {
+				"estab_id" : 687,
+				"establishment_name" : "Albany Community Hospice",
+				"address" : "Diprose Crescent",
+				"suburb" : "ALBANY",
+				"postcode" : "6330",
+				"type" : "Private",
+				"object_id" : 127
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.164642346, -30.960763241 ]
+			},
+			"properties" : {
+				"estab_id" : 857,
+				"establishment_name" : "Coolgardie Health Centre",
+				"address" : "Hunt Street",
+				"suburb" : "COOLGARDIE",
+				"postcode" : "6429",
+				"type" : "Public",
+				"object_id" : 128
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.789710778, -31.959886538 ]
+			},
+			"properties" : {
+				"estab_id" : 935,
+				"establishment_name" : "Graylands Hospital (MHS)",
+				"address" : "Brockway Road",
+				"suburb" : "MOUNT CLAREMONT",
+				"postcode" : "6010",
+				"type" : "Public",
+				"object_id" : 129
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.764159822, -31.751548163 ]
+			},
+			"properties" : {
+				"estab_id" : 3187,
+				"establishment_name" : "Tenacious House",
+				"address" : "Lincoln Ln",
+				"suburb" : "JOONDALUP",
+				"postcode" : "6027",
+				"type" : "",
+				"object_id" : 130
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.773753567, -23.142881146 ]
+			},
+			"properties" : {
+				"estab_id" : 4040,
+				"establishment_name" : "Coral Bay Nursing Post",
+				"address" : "Coral Bay Shopping Centre",
+				"suburb" : "CORAL BAY",
+				"postcode" : "6701",
+				"type" : "Public",
+				"object_id" : 131
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 121.474675122, -30.747032608 ]
+			},
+			"properties" : {
+				"estab_id" : 4041,
+				"establishment_name" : "Coonana Health Centre",
+				"address" : "Ware Street",
+				"suburb" : "KALGOORLIE",
+				"postcode" : "6430",
+				"type" : "Public",
+				"object_id" : 132
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.510956497, -32.793969613 ]
+			},
+			"properties" : {
+				"estab_id" : 4042,
+				"establishment_name" : "Varley Nursing Post",
+				"address" : "Lot 18, Arthur Street",
+				"suburb" : "VARLEY",
+				"postcode" : "6355",
+				"type" : "Public",
+				"object_id" : 133
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.066227683, -30.50286331 ]
+			},
+			"properties" : {
+				"estab_id" : 4043,
+				"establishment_name" : "Cervantes Nursing Post",
+				"address" : "Weston Street",
+				"suburb" : "CERVANTES",
+				"postcode" : "6511",
+				"type" : "Public",
+				"object_id" : 134
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.04436878, -30.305658831 ]
+			},
+			"properties" : {
+				"estab_id" : 4058,
+				"establishment_name" : "Jurien Bay Health Centre",
+				"address" : "Whitfield Street",
+				"suburb" : "JURIEN",
+				"postcode" : "6516",
+				"type" : "Public",
+				"object_id" : 135
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 119.378146673, -34.397066365 ]
+			},
+			"properties" : {
+				"estab_id" : 4074,
+				"establishment_name" : "Bremer Bay Health Centre",
+				"address" : "29 John Street",
+				"suburb" : "BREMER BAY",
+				"postcode" : "6338",
+				"type" : "Public",
+				"object_id" : 136
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 118.155753832, -32.668838841 ]
+			},
+			"properties" : {
+				"estab_id" : 4107,
+				"establishment_name" : "Kulin Health Centre",
+				"address" : "Medical Centre",
+				"suburb" : "KULIN",
+				"postcode" : "6365",
+				"type" : "Public",
+				"object_id" : 137
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 120.697495349, -27.913099169 ]
+			},
+			"properties" : {
+				"estab_id" : 4124,
+				"establishment_name" : "Leinster Community Health Service",
+				"address" : "29a Gledden Drive",
+				"suburb" : "LEINSTER",
+				"postcode" : "6437",
+				"type" : "Public",
+				"object_id" : 138
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.932775229, -24.651164476 ]
+			},
+			"properties" : {
+				"estab_id" : 4171,
+				"establishment_name" : "Burringurrah Nursing Post",
+				"address" : "Burringurrah Remote Community",
+				"suburb" : "CARNARVON",
+				"postcode" : "6701",
+				"type" : "Public",
+				"object_id" : 139
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 120.108490975, -21.886365015 ]
+			},
+			"properties" : {
+				"estab_id" : 4174,
+				"establishment_name" : "Nullagine Community Health Service",
+				"address" : "Marble Bar Road",
+				"suburb" : "NULLAGINE",
+				"postcode" : "6758",
+				"type" : "Public",
+				"object_id" : 140
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.535923678, -25.927285635 ]
+			},
+			"properties" : {
+				"estab_id" : 4198,
+				"establishment_name" : "Silver Chain Shark Bay",
+				"address" : "53 Hughes Street",
+				"suburb" : "DENHAM",
+				"postcode" : "6537",
+				"type" : "Private",
+				"object_id" : 141
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 128.889439057, -31.676444143 ]
+			},
+			"properties" : {
+				"estab_id" : 4223,
+				"establishment_name" : "Eucla Health Centre",
+				"address" : "Lot 500, Patupis Street",
+				"suburb" : "EUCLA",
+				"postcode" : "6443",
+				"type" : "Private",
+				"object_id" : 142
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 123.060820507, -16.445726237 ]
+			},
+			"properties" : {
+				"estab_id" : 4239,
+				"establishment_name" : "One Arm Point Health Centre",
+				"address" : "Lot 30 Ardyaloon Street, Ardyaloon Community",
+				"suburb" : "DAMPIER PENINSULA",
+				"postcode" : "6725",
+				"type" : "Public",
+				"object_id" : 143
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 122.892972499, -16.516074074 ]
+			},
+			"properties" : {
+				"estab_id" : 4240,
+				"establishment_name" : "Lombadina Health Centre",
+				"address" : "Lot 202 Bishop Road, Lombadina Community",
+				"suburb" : "DAMPIER PENINSULA",
+				"postcode" : "6725",
+				"type" : "Public",
+				"object_id" : 144
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 124.149550158, -18.0392204 ]
+			},
+			"properties" : {
+				"estab_id" : 4241,
+				"establishment_name" : "Looma Health Centre",
+				"address" : "Lot 19 Looma Circuit, Looma Community",
+				"suburb" : "CAMBALLIN",
+				"postcode" : "6728",
+				"type" : "Public",
+				"object_id" : 145
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 124.831120684, -18.503208271 ]
+			},
+			"properties" : {
+				"estab_id" : 4242,
+				"establishment_name" : "Noonkanbah Health Centre",
+				"address" : "Lot 76 Wargaree Road, Yungngora Community",
+				"suburb" : "MOUNT HARDMAN",
+				"postcode" : "6765",
+				"type" : "Public",
+				"object_id" : 146
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 128.212142917, -17.029887236 ]
+			},
+			"properties" : {
+				"estab_id" : 4243,
+				"establishment_name" : "Warmun Health Centre",
+				"address" : "Lot 819 Road 1, Warmun Community",
+				"suburb" : "WARMUN",
+				"postcode" : "6743",
+				"type" : "Public",
+				"object_id" : 147
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 126.638201511, -14.290784454 ]
+			},
+			"properties" : {
+				"estab_id" : 4244,
+				"establishment_name" : "Kalumburu Health Centre",
+				"address" : "Lot 138 Kalumburu Boulevard, Kalumburu Community",
+				"suburb" : "KALUMBURU",
+				"postcode" : "6740",
+				"type" : "Public",
+				"object_id" : 148
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 116.009327549, -31.894919796 ]
+			},
+			"properties" : {
+				"estab_id" : 6007,
+				"establishment_name" : "St John of God Midland Hospital",
+				"address" : "1 Clayton Street",
+				"suburb" : "MIDLAND",
+				"postcode" : "6056",
+				"type" : "Private",
+				"object_id" : 149
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 115.827993418, -31.94292575 ]
+			},
+			"properties" : {
+				"estab_id" : 6014,
+				"establishment_name" : "West Leederville Private Hospital",
+				"address" : "Suite 24, Level 3, 2 McCourt Street",
+				"suburb" : "WEST LEEDERVILLE",
+				"postcode" : "6007",
+				"type" : "Private",
+				"object_id" : 150
+			}
+		}
+	]
+}
