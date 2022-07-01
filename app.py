@@ -3,45 +3,71 @@ import pandas as pd
 from flask import Flask, jsonify, request
 from flask import render_template, redirect, url_for
 import json
-
-# Create or connect to database
-connection = sqlite3.connect('nitrous.db')
-
-# Create or connect to tables
-cursor = connection.cursor()
-cursor.execute('''
-               CREATE TABLE IF NOT EXISTS hospitals (
-               [name] TEXT PRIMARY KEY, [address] TEXT,
-               [suburb] TEXT, [postcode] INTEGER, [state] TEXT,
-               [country] TEXT, [lat] FLOAT, [long] FLOAT,
-               [hosp_type] TEXT, [region] TEXT, [cases_adult] INTEGER,
-               [cases_obs], INTEGER, [cases_paed] INTEGET, [cases_burns] INTEGER,
-               [supplier] TEXT, [maintenance] TEXT, [diagram] TEXT, [outlets] TEXT)
-              ''')
-
-cursor.execute("""
-               CREATE TABLE IF NOT EXISTS manifolds (
-               [name] TEXT, [cylinder_f8] INTEGER, [cylinder_f9] INTEGER, 
-               [cylinder_g] INTEGER, [date] TEXT,
-               PRIMARY KEY (name, date)) 
-               """)
-
-cursor.execute("""
-               CREATE TABLE IF NOT EXISTS purchases (
-               [name] TEXT, [cylinder_c] INTEGER, [cylinder_d] INTEGER,
-               [cylinder_E] INTEGER, [cylinder_f8] INTEGER, [cylinder_f9] INTEGER, 
-               [cylinder_g] INTEGER, [date] TEXT, [total_n2o] FLOAT)
-               """)
-
-connection.commit()
-connection.close()
+from flask_sqlalchemy import SQLAlchemy
 
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://whniydkuydvcku:c3bbeaf20ae183a54a3642a5f2c7801e5bbd373b1410c4de6dc15bfa4ac285cf@ec2-44-206-11-200.compute-1.amazonaws.com:5432/d27sooa4rb8aeq'
 
+#################################################
+# Initialise Database and create DB model
+#################################################
+db = SQLAlchemy(app)
+
+class Hospitals(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(200), nullable=False)
+    address = db.Column(db.String(200))
+    suburb = db.Column(db.String(200))
+    postcode = db.Column(db.String(200))
+    state = db.Column(db.String(200))
+    country = db.Column(db.String(200))
+    lat = db.Column(db.Float)
+    long = db.Column(db.Float)
+    hosp_type = db.Column(db.String(200))
+    region = db.Column(db.String(200))
+    cases_adult = db.Column(db.Integer)
+    cases_obs = db.Column(db.Integer)
+    cases_paed = db.Column(db.Integer)
+    cases_burns = db.Column(db.Integer)
+    supplier = db.Column(db.String(200))
+    maintenance = db.Column(db.String(200))
+    diagram = db.Column(db.String(200))
+    outlets = db.Column(db.String(200))
+
+    def __repr__(self):
+        return '<Name %r>' % self.id
+
+class Manifolds(db.Model):
+    manifold_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(200))
+    cylinder_f8 = db.Column(db.Integer)
+    cylinder_f9 = db.Column(db.Integer)
+    cylinder_g = db.Column(db.Integer)
+    date = db.Column(db.String(200))
+
+    def __repr__(self):
+        return '<Name %r>' % self.manifold_id
+
+class Purchases(db.Model):
+    purchase_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(200))
+    cylinder_c = db.Column(db.Integer)
+    cylinder_d = db.Column(db.Integer)
+    cylinder_e = db.Column(db.Integer)
+    cylinder_f8 = db.Column(db.Integer)
+    cylinder_f9 = db.Column(db.Integer)
+    cylinder_g = db.Column(db.Integer)
+    date = db.Column(db.String(200))
+    total = db.Column(db.Float)
+
+    def __repr__(self):
+        return '<Name %r>' % self.purchase_id
+
+db.create_all()
 
 #################################################
 # Flask Routes
@@ -58,6 +84,7 @@ def newhosp():
 
     # Return template and data
     alert = ["Hospital Name", 'does_not_exist']
+    
     return render_template("addHospital.html", alert = alert)   
 
 
@@ -70,7 +97,7 @@ def submitData():
         alert = ["", "Please enter a hospital name"]
         return render_template('addHospital.html', alert=alert)
 
-    street = request.form.get('street')
+    address = request.form.get('street')
     suburb = request.form.get('suburb')
     postcode = request.form.get('postcode')
     state = request.form.get('state')
@@ -94,63 +121,47 @@ def submitData():
     diagram = request.form.get('gridRadios5')
     outlets = request.form.get('gridRadios6')
 
+    new_hospital = Hospitals(name=name, address=address, suburb=suburb,
+                             postcode=postcode, state=state, country=country,
+                             lat=lat, long=long, hosp_type=hosp_type, region=region,
+                             cases_adult=cases_adult, cases_obs=cases_obs, 
+                             cases_paed=cases_paed, cases_burns=cases_burns, 
+                             supplier=supplier, maintenance=maintenance, diagram=diagram,
+                             outlets=outlets)
 
-    with sqlite3.connect("nitrous.db") as con:
-        cur = con.cursor()
-        
-        sql_hospital = ''' 
-                INSERT INTO hospitals(name,address,suburb,postcode,state,country,
-                lat,long,hosp_type,region,cases_adult,cases_obs,cases_paed,cases_burns,
-                supplier,maintenance,diagram,outlets)
-                VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
-                '''
+    new_manifold = Manifolds(name=name, cylinder_f8=cylinder_f8, cylinder_f9=cylinder_f9,
+                             cylinder_g=cylinder_g, date=date)
 
-        sql_manifold = '''
-                INSERT INTO manifolds(name, cylinder_f8, cylinder_f9, cylinder_g, date)  
-                VALUES(?,?,?,?,?) 
-                '''   
+    hosp_data = (name, address, suburb, postcode, state, country, lat, long, hosp_type, 
+                 region, cases_adult,cases_obs,cases_paed,cases_burns,supplier,maintenance,
+                 diagram, outlets)
 
-        new_hospital = (name,street,suburb,postcode,state,country,lat,long,hosp_type,region,
-                        cases_adult,cases_obs,cases_paed,cases_burns,supplier,maintenance,
-                        diagram, outlets)
+    manifold_data = (name, cylinder_f8, cylinder_f9, cylinder_g, date)
 
-        new_manifold = (name, cylinder_f8, cylinder_f9, cylinder_g, date)
-        
-        print(new_hospital)
-        try:      
-            cur.execute(sql_hospital, new_hospital)
-            cur.execute(sql_manifold, new_manifold)
-        except sqlite3.IntegrityError:
-            alert = [name, 'already exists in the database']
-            return render_template('addHospital.html', alert=alert)
+    try:
+        db.session.add(new_hospital)
+        db.session.add(new_manifold)
+        db.session.commit()
+        return render_template("confirmation.html", data=hosp_data, manifold_data=manifold_data)   
+    except:
+        alert = [name, 'already exists in the database']
+        return render_template('addHospital.html', alert=alert) 
 
-
-        con.commit()
-        msg = "Record successfully added"
-        print(msg)
-   
-
-
-
-    return render_template("confirmation.html", data=new_hospital, manifold_data=new_manifold)
 
 
 @app.route("/newpurchase")
 def newpurchase():
     
-    # Connect to database
-    connection = sqlite3.connect('nitrous.db')
+    hosp_query = Hospitals.query.all()
+    data = [u.__dict__ for u in hosp_query]
+    for row in data:
+        del row['_sa_instance_state']  
 
-    # Connect to tables
-    cursor = connection.cursor()
+    purchase_query = Purchases.query.all()
+    purchase_data = [u.__dict__ for u in purchase_query]
+    for row in purchase_data:
+        del row['_sa_instance_state']
 
-    cursor.execute('''SELECT * FROM hospitals''')
-    data = cursor.fetchall()
-
-    cursor.execute('''SELECT * FROM purchases''')
-    purchase_data = cursor.fetchall()
-
-    connection.close()    
 
     # Return template and data
     return render_template("addPurchase.html", data=data, purchase_data=purchase_data) 
@@ -162,72 +173,57 @@ def submitPurchase():
     req = request.json
         
     hospital = req[0]['hospitalName']
-    print(hospital)
 
-    with sqlite3.connect("nitrous.db") as con:
+
+    # Delete the current table data for this hospital
+    db.session.query(Purchases).filter(Purchases.name==hospital).delete()
+    db.session.commit()
     
-        cursor = con.cursor()
-
-        # Delete the current table data for this hospital
-        sql_delete = f"""
-                      DELETE FROM purchases
-                      WHERE name = '{hospital}'
-                      """
-        cursor.execute(sql_delete)
-        con.commit()
-        print("All records successfully deleted")
-
-        sql_purchases = ''' 
-                        INSERT INTO purchases(name,cylinder_c,cylinder_d,
-                        cylinder_e,cylinder_f8,cylinder_f9,cylinder_g,date,total_n2o)
-                        VALUES(?,?,?,?,?,?,?,?,?) 
-                        '''
+    
+    # Add each purchase to the table 
+    for i in range(1, len(req)):
+        cylinder_c = req[i]['cylinder_c']
+        cylinder_d = req[i]['cylinder_d']
+        cylinder_e = req[i]['cylinder_e']
+        cylinder_f8 = req[i]['cylinder_f8']
+        cylinder_f9 = req[i]['cylinder_f9']
+        cylinder_g = req[i]['cylinder_g']
+        date = req[i]['date']
+        total = req[i]['total']
         
-        # Add each purchase to the table 
-        for i in range(1, len(req)):
-            cylinder_c = req[i]['cylinder_c']
-            cylinder_d = req[i]['cylinder_d']
-            cylinder_e = req[i]['cylinder_e']
-            cylinder_f8 = req[i]['cylinder_f8']
-            cylinder_f9 = req[i]['cylinder_f9']
-            cylinder_g = req[i]['cylinder_g']
-            date = req[i]['date']
-            total = req[i]['total']
-            
-            new_purchase = (hospital, cylinder_c, cylinder_d, cylinder_e, 
-                            cylinder_f8, cylinder_f9, cylinder_g, date, total)
-            
-            cursor.execute(sql_purchases, new_purchase)
-            con.commit()    
+        new_purchase = Purchases(name=hospital, cylinder_c=cylinder_c, cylinder_d=cylinder_d,
+                                    cylinder_e=cylinder_e, cylinder_f8=cylinder_f8, cylinder_f9=cylinder_f9,
+                                    cylinder_g=cylinder_g, date=date, total=total)
 
-            msg = "Record successfully added"
-            print(msg)  
+        db.session.add(new_purchase)
+        db.session.commit()       
 
-        cursor.execute('''SELECT * FROM purchases''')
-        new_data = cursor.fetchall()
-
-        return json.dumps(new_data)
+    purchase_query = Purchases.query.all()
+    purchase_data = [u.__dict__ for u in purchase_query]
+    for row in purchase_data:
+        del row['_sa_instance_state']  
+    
+    return json.dumps(purchase_data)
 
 
 @app.route("/edit")
 def editHospital():
 
-    # Connect to database
-    connection = sqlite3.connect('nitrous.db')
+    hosp_query = Hospitals.query.all()
+    data = [u.__dict__ for u in hosp_query]
+    for row in data:
+        del row['_sa_instance_state']  
 
-    # Connect to tables
-    cursor = connection.cursor()
+    manifold_query = Manifolds.query.all()
+    manifold_data = [u.__dict__ for u in manifold_query]
+    for row in manifold_data:
+        del row['_sa_instance_state']
+   
+    purchase_query = Purchases.query.all()
+    purchase_data = [u.__dict__ for u in purchase_query]
+    for row in purchase_data:
+        del row['_sa_instance_state']
 
-    cursor.execute('''SELECT * FROM hospitals''')
-    data = cursor.fetchall()
-
-    cursor.execute('''SELECT * FROM manifolds''')
-    manifold_data = cursor.fetchall()
-
-    cursor.execute('''SELECT * FROM purchases''')
-    purchase_data = cursor.fetchall()
-
-    connection.close()    
 
     # Return template and data
     return render_template("edit.html", data=data, manifold_data=manifold_data, purchase_data=purchase_data)  
@@ -240,88 +236,90 @@ def submitEdit():
     hospital = req[0]['name']
     tables = ['hospitals', 'manifolds', 'purchases']
     
-    with sqlite3.connect("nitrous.db") as con:
-        
-        cursor = con.cursor()
-
-        for table in tables:
-            # Delete the current table data for this hospital
-            sql_delete = f"""
-                        DELETE FROM {table}
-                        WHERE name = '{hospital}'
-                        """
-            cursor.execute(sql_delete)
-            con.commit()
-            print(f"{table} table successfully deleted")
-       
-        
-        sql_hospital = ''' 
-        INSERT INTO hospitals(name,address,suburb,postcode,state,country,
-        lat,long,hosp_type,region,cases_adult,cases_obs,cases_paed,cases_burns,
-        supplier,maintenance,diagram,outlets)
-        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
-        '''
-        sql_manifold = '''
-                INSERT INTO manifolds(name, cylinder_f8, cylinder_f9, cylinder_g, date)  
-                VALUES(?,?,?,?,?) 
-                '''  
-
-        sql_purchases = ''' 
-                        INSERT INTO purchases(name,cylinder_c,cylinder_d,
-                        cylinder_e,cylinder_f8,cylinder_f9,cylinder_g,date,total_n2o)
-                        VALUES(?,?,?,?,?,?,?,?,?) 
-                        '''
-        
-        new_hospital = [(hospital, req[0]['address'], req[0]['suburb'], req[0]['postcode'], 
-                        req[0]['state'], req[0]['country'], req[0]['lat'], req[0]['long'],
-                        req[0]['hosp_type'], req[0]['region'], req[0]['cases_adult'], 
-                        req[0]['cases_obs'], req[0]['cases_paed'], req[0]['cases_burns'], 
-                        req[0]['supplier'], req[0]['maintenance'], req[0]['diagram'], req[0]['outlets'])]
-
-        new_manifold = []
-        for i in range(0, len(req[1])):
-            current_row = (hospital, req[1][i]['cylinder_f8'], req[1][i]['cylinder_f9'], 
-                        req[1][i]['cylinder_g'], req[1][i]['date'])
-            new_manifold.append(current_row)
-        if len(new_manifold) == 0:
-            current_row = (hospital, 0, 0, 0, 'DD/MM/YYYY')
-            new_manifold.append(current_row)
-
-        print(new_manifold)
-        
-        new_purchase = []
-        for i in range(0, len(req[2])):
-            current_row = (hospital, req[2][i]['cylinder_c'], req[2][i]['cylinder_d'], req[2][i]['cylinder_e'], 
-                        req[2][i]['cylinder_f8'], req[2][i]['cylinder_f9'], req[2][i]['cylinder_g'], 
-                        req[2][i]['date'], req[2][i]['total'])
-            new_purchase.append(current_row)
-        if len(new_purchase) == 0:
-            current_row = (hospital, 0, 0, 0, 8, 8, 8, 'DD/MM/YYYY', 0)
-            new_purchase.append(current_row)
-
-        print(len(new_purchase))
+    # Delete the current table data for this hospital
+    db.session.query(Hospitals).filter(Hospitals.name==hospital).delete()
+    db.session.query(Manifolds).filter(Manifolds.name==hospital).delete()
+    db.session.query(Purchases).filter(Purchases.name==hospital).delete()
+    db.session.commit()
     
-        cursor.executemany(sql_hospital, new_hospital)
-        cursor.executemany(sql_manifold, new_manifold)
-        cursor.executemany(sql_purchases, new_purchase)
+    address = req[0]['address']
+    suburb = req[0]['suburb']
+    postcode = req[0]['postcode']
+    state = req[0]['state']
+    country = req[0]['country']
+    lat = req[0]['lat']
+    long = req[0]['long']
+
+    hosp_type = req[0]['hosp_type']
+    region = req[0]['region']
+    cases_adult = req[0]['cases_adult']
+    cases_obs = req[0]['cases_obs']
+    cases_paed = req[0]['cases_paed']
+    cases_burns = req[0]['cases_burns']
+
+    supplier = req[0]['supplier']
+    maintenance = req[0]['maintenance']
+    diagram = req[0]['diagram']
+    outlets = req[0]['outlets']
+    
+    new_hospital = Hospitals(name=hospital, address=address, suburb=suburb,
+                             postcode=postcode, state=state, country=country,
+                             lat=lat, long=long, hosp_type=hosp_type, region=region,
+                             cases_adult=cases_adult, cases_obs=cases_obs, 
+                             cases_paed=cases_paed, cases_burns=cases_burns, 
+                             supplier=supplier, maintenance=maintenance, diagram=diagram,
+                             outlets=outlets)
+    
+    db.session.add(new_hospital)
+    db.session.commit()
+
+    # Add each manifold to the table 
+    for i in range(0, len(req[1])):
+        cylinder_f8 = req[1][i]['cylinder_f8']
+        cylinder_f9 = req[1][i]['cylinder_f9']
+        cylinder_g = req[1][i]['cylinder_g']
+        date = req[1][i]['date']
+
+        new_manifold = Manifolds(name=hospital, cylinder_f8=cylinder_f8, cylinder_f9=cylinder_f9,
+                                 cylinder_g=cylinder_g, date=date)
+
+        db.session.add(new_manifold)
+        db.session.commit()                          
+    
+    # Add each purchase to the table 
+    for i in range(0, len(req[2])):
+        cylinder_c = req[2][i]['cylinder_c']
+        cylinder_d = req[2][i]['cylinder_d']
+        cylinder_e = req[2][i]['cylinder_e']
+        cylinder_f8 = req[2][i]['cylinder_f8']
+        cylinder_f9 = req[2][i]['cylinder_f9']
+        cylinder_g = req[2][i]['cylinder_g']
+        date = req[2][i]['date']
+        total = req[2][i]['total']
         
-        con.commit()  
-    
-    # Pull all data to send back
-    con = sqlite3.connect('nitrous.db')
-    
-    cursor = con.cursor()
-    
-    cursor.execute('''SELECT * FROM hospitals''')
-    data = cursor.fetchall()
+        new_purchase = Purchases(name=hospital, cylinder_c=cylinder_c, cylinder_d=cylinder_d,
+                                    cylinder_e=cylinder_e, cylinder_f8=cylinder_f8, cylinder_f9=cylinder_f9,
+                                    cylinder_g=cylinder_g, date=date, total=total)
 
-    cursor.execute('''SELECT * FROM manifolds''')
-    manifold_data = cursor.fetchall()
+        db.session.add(new_purchase)
+        db.session.commit()       
+     
+    # Pull all current data to send back
+    hosp_query = Hospitals.query.all()
+    data = [u.__dict__ for u in hosp_query]
+    for row in data:
+        del row['_sa_instance_state']  
 
-    cursor.execute('''SELECT * FROM purchases''')
-    purchase_data = cursor.fetchall()
+    manifold_query = Manifolds.query.all()
+    manifold_data = [u.__dict__ for u in manifold_query]
+    for row in manifold_data:
+        del row['_sa_instance_state']
+   
+    purchase_query = Purchases.query.all()
+    purchase_data = [u.__dict__ for u in purchase_query]
+    for row in purchase_data:
+        del row['_sa_instance_state']
 
-    con.close()  
 
     return_data = [{0:data, 1:manifold_data, 2:purchase_data}]
     

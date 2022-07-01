@@ -10,7 +10,7 @@ displaySetting = true
 function fillSelect(data, manifold_data, purchase_data) {     
     // Save instance of the hospitals table and create a list of just hospital names
     hospital_table = data
-    hospitals = data.map(row => row[0]); // the hospital name key
+    hospitals = data.map(row => row['name']); // the hospital name key
     hospitals.push("Select hospital to edit")
 
     // Save instance of the manifolds table for later use
@@ -48,14 +48,14 @@ function updateData() {
     hospitalName = d3.select("#selDataset").property("value")
     
     // Filter to just this hospitals data
-    hospitalData = hospital_table.filter(d => d[0] == hospitalName)
+    hospitalData = hospital_table.filter(d => d['name'] == hospitalName)
     hospitalData = hospitalData[0]
 
     // Filter to just this hospitals manifolds
-    manifoldData = manifold_table.filter(d => d[0] == hospitalName)
+    manifoldData = manifold_table.filter(d => d['name'] == hospitalName)
 
     // Filter to just this hospitals purchases
-    purchaseData = purchase_table.filter(d => d[0] == hospitalName)
+    purchaseData = purchase_table.filter(d => d['name'] == hospitalName)
 
     let eventSetting = "auto"
     let displaySetting = true  
@@ -69,7 +69,6 @@ function updateData() {
     }
     
     if (manifoldData.length == 0) {
-
         // Clear the purchase table
         $('#manifoldTable tr:gt(0)').remove()
 
@@ -89,7 +88,6 @@ function updateData() {
     }
     
     if (purchaseData.length == 0) {
-
         // Clear the purchase table
         $('#purchaseTable tr:gt(0)').remove()
 
@@ -120,97 +118,116 @@ function updateData() {
     myFieldset.disabled = displaySetting;
     
     // Fill the location data for selected hospital 
-    d3.select("#inputStreet").property("value", hospitalData[1]);
-    d3.select("#inputSuburb").property("value", hospitalData[2]);
-    d3.select("#inputPostcode").property("value", hospitalData[3]);
-    d3.select("#inputState").property("value", hospitalData[4]);
-    d3.select("#inputCountry").property("value", hospitalData[5]);
-    d3.select("#inputLat").property("value", hospitalData[6]);
-    d3.select("#inputLong").property("value", hospitalData[7]);
+    d3.select("#inputStreet").property("value", hospitalData['address']);
+    d3.select("#inputSuburb").property("value", hospitalData['suburb']);
+    d3.select("#inputPostcode").property("value", hospitalData['postcode']);
+    d3.select("#inputState").property("value", hospitalData['state']);
+    d3.select("#inputCountry").property("value", hospitalData['country']);
+    d3.select("#inputLat").property("value", hospitalData['lat']);
+    d3.select("#inputLong").property("value", hospitalData['long']);
 
     // Update radioboxes
-    if (hospitalData[8] == "public") {
+    if (hospitalData['hosp_type'] == "public") {
         d3.select("#publicRadio").property("checked", "checked");
-    } else if (hospitalData[8] == "private"){
+    } else if (hospitalData['hosp_type'] == "private"){
         d3.select("#privateRadio").property("checked", "checked");
     } else {
         d3.select("#mixedRadio").property("checked", "checked");
     }
 
-    if (hospitalData[9] == "metro") {
+    if (hospitalData['region'] == "metro") {
         d3.select("#metroRadio").property("checked", "checked");
     } else {
         d3.select("#regionalRadio").property("checked", "checked");
     }
 
-    if (hospitalData[9] == "metro") {
-        d3.select("#metroRadio").property("checked", "checked");
+    if (hospitalData['supplier'] == "boc") {
+        d3.select("#bocRadio").property("checked", "checked");
     } else {
-        d3.select("#regionalRadio").property("checked", "checked");
+        d3.select("#airLiquidRadio").property("checked", "checked");
     }
 
-    if (hospitalData[16] == "yes") {
+    if (hospitalData['maintainance'] == "boc") {
+        d3.select("#bocMaintainRadio").property("checked", "checked");
+    } else if (hospitalData['maintainance'] == "air") {
+        d3.select("#airMaintainRadio").property("checked", "checked");
+    } else if (hospitalData['maintainance'] == "hosp") {
+        d3.select("#hospMaintainRadio").property("checked", "checked");
+    } else if (hospitalData['maintainance'] == "nil") {
+        d3.select("#nilMaintainRadio").property("checked", "checked");
+    } else {
+        d3.select("#unknownMaintainRadio").property("checked", "checked");
+    }
+
+    if (hospitalData['diagram'] == "yes") {
         d3.select("#available").property("checked", "checked");
     } else {
         d3.select("#not_available").property("checked", "checked");
     }
 
-    if (hospitalData[17] == "yes") {
+    if (hospitalData['outlets'] == "yes") {
         d3.select("#shows").property("checked", "checked");
     } else {
         d3.select("#doesnt_show").property("checked", "checked");
     }
 
     // Update case-mix
-    d3.select("#adultInput").property("value", hospitalData[10]);
-    d3.select("#obstetricInput").property("value", hospitalData[11]);
-    d3.select("#paedsInput").property("value", hospitalData[12]);
-    d3.select("#burnsInput").property("value", hospitalData[13]);
+    d3.select("#adultInput").property("value", hospitalData['cases_adult']);
+    d3.select("#obstetricInput").property("value", hospitalData['cases_obs']);
+    d3.select("#paedsInput").property("value", hospitalData['cases_paed']);
+    d3.select("#burnsInput").property("value", hospitalData['cases_burns']);
     
-    // Clear the manifold table
-    $('#manifoldTable tr:gt(0)').remove()
+        
+    if (manifoldData.length != 0) {
+        // Clear the manifold table
+        $('#manifoldTable tr:gt(0)').remove()
     
-    // Append manifold data for selected hospital
-    for (let i = 0; i < manifoldData.length; i++) {
-                
-        $('#manifoldTable tr:last').after(`
-                                          <tr>
-                                            <td class="date-cell">${manifoldData[i][4]}</td>
-                                            <td>${manifoldData[i][1]}</td>
-                                            <td>${manifoldData[i][2]}</td>
-                                            <td>${manifoldData[i][3]}</td>
-                                            <td>
-                                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                            </td>
-                                          </tr>
-                                          `);
+        // Append manifold data for selected hospital
+        for (let i = 0; i < manifoldData.length; i++) {
+                    
+            $('#manifoldTable tr:last').after(`
+                                            <tr>
+                                                <td class="date-cell">${manifoldData[i]['date']}</td>
+                                                <td>${manifoldData[i]['cylinder_f8']}</td>
+                                                <td>${manifoldData[i]['cylinder_f9']}</td>
+                                                <td>${manifoldData[i]['cylinder_g']}</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                                </td>
+                                            </tr>
+                                            `);
+        };
     };
 
-    // Clear the purchase table
-    $('#purchaseTable tr:gt(0)').remove()
+    if (purchaseData.length != 0) {
+        
+        // Clear the purchase table
+        $('#purchaseTable tr:gt(0)').remove()
 
-    // Append purchase data for selected hospital
-    for (let i = 0; i < purchaseData.length; i++) {
-                
-        $('#purchaseTable tr:last').after(`
-                                          <tr>
-                                            <td class="date-cell">${purchaseData[i][7]}</td>
-                                            <td>${purchaseData[i][1]}</td>
-                                            <td>${purchaseData[i][2]}</td>
-                                            <td>${purchaseData[i][3]}</td>
-                                            <td>${purchaseData[i][4]}</td>
-                                            <td>${purchaseData[i][5]}</td>
-                                            <td>${purchaseData[i][6]}</td>
-                                            <td>
-                                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                            </td>
-                                          </tr>
-                                          `);
+        // Append purchase data for selected hospital
+        for (let i = 0; i < purchaseData.length; i++) {
+                    
+            $('#purchaseTable tr:last').after(`
+                                            <tr>
+                                                <td class="date-cell">${purchaseData[i]['date']}</td>
+                                                <td>${purchaseData[i]['cylinder_c']}</td>
+                                                <td>${purchaseData[i]['cylinder_d']}</td>
+                                                <td>${purchaseData[i]['cylinder_e']}</td>
+                                                <td>${purchaseData[i]['cylinder_f8']}</td>
+                                                <td>${purchaseData[i]['cylinder_f9']}</td>
+                                                <td>${purchaseData[i]['cylinder_g']}</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                                </td>
+                                            </tr>
+                                            `);
+        };
     };
+
 };
 
 // Control of the tables 

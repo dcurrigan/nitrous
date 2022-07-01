@@ -7,7 +7,7 @@ function fillSelect(data, purchase_data) {
     
     // Save instance of the hospitals table and create a list of just hospital names
     hospital_table = data
-    hospitals = data.map(row => row[0]); // the hospital name key
+    hospitals = data.map(row => row['name']); // the hospital name key
     hospitals.push("Select hospital to edit")
 
     // Save instance of the manifolds table for later use
@@ -43,11 +43,17 @@ function updateHosp() {
     
     if (hospitalName == "Select hospital to edit") {
         displaySetting = true
-        purchaseData = [[0, 0, 0, 0, 0, 0, 0,'dd/mm/yyyy',0]]
+        purchaseData = [{'cylinder_c':0, 'cylinder_d':0, 'cylinder_e':0, 
+                         'cylinder_f8':0, 'cylinder_f9':0, 'cylinder_g': 0, 
+                         'date':'dd/mm/yyyy','total':0}]
+    } else if ((purchase_table.filter(d => d['name'] == hospitalName)).length == 0) {
+        purchaseData = [{'cylinder_c':0, 'cylinder_d':0, 'cylinder_e':0, 
+        'cylinder_f8':0, 'cylinder_f9':0, 'cylinder_g': 0, 
+        'date':'dd/mm/yyyy','total':0}]
     } else {
         displaySetting = false
         // Filter to just this hospitals purchases
-        purchaseData = purchase_table.filter(d => d[0] == hospitalName)
+        purchaseData = purchase_table.filter(d => d['name'] == hospitalName)
     }
 
     // Activate/Deactivate the form depending on selection
@@ -61,13 +67,13 @@ function updateHosp() {
     for (let i = 0; i < purchaseData.length; i++) {      
         $('tbody').append(`
                             <tr>
-                            <td class="date-cell">${purchaseData[i][7]}</td>
-                            <td>${purchaseData[i][1]}</td>
-                            <td>${purchaseData[i][2]}</td>
-                            <td>${purchaseData[i][3]}</td>
-                            <td>${purchaseData[i][4]}</td>
-                            <td>${purchaseData[i][5]}</td>
-                            <td>${purchaseData[i][6]}</td>
+                            <td class="date-cell">${purchaseData[i]['date']}</td>
+                            <td>${purchaseData[i]['cylinder_c']}</td>
+                            <td>${purchaseData[i]['cylinder_d']}</td>
+                            <td>${purchaseData[i]['cylinder_e']}</td>
+                            <td>${purchaseData[i]['cylinder_f8']}</td>
+                            <td>${purchaseData[i]['cylinder_f9']}</td>
+                            <td>${purchaseData[i]['cylinder_g']}</td>
                             <td>
                                 <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
                                 <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -175,11 +181,6 @@ $(document).ready(function(){
 });
 
 
-// function closeDiv(){
-//     document.getElementById("success").style.opacity=0;
-//     document.getElementById("success").style.transition="visibility 0s 4s, opacity 4s linear;";
-//     // document.getElementById("success").style.display=" none";
-// }
 
 // Fadeout styling for the success div
 function fadeOutEffect() {
@@ -211,7 +212,7 @@ function sendData() {
         response.json().then(json => {
             purchase_table = json
             })
-        
+        console.log(purchase_table)
         $('#success').css('opacity', 1)
         fadeOutEffect() 
 

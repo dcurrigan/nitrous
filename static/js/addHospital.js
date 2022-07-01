@@ -40,7 +40,6 @@ function loadData(inputValue) {
         
         hospital = inputValue
         
-        test = d3.select('input[name="gridRadios1"]:checked').node().value
 
         // Check if entered hospital name is in existing list of hospitals
         // and populate the other location fields if match found
