@@ -50,6 +50,7 @@ function updateHosp() {
         purchaseData = [{'cylinder_c':0, 'cylinder_d':0, 'cylinder_e':0, 
         'cylinder_f8':0, 'cylinder_f9':0, 'cylinder_g': 0, 
         'date':'dd/mm/yyyy','total':0}]
+        displaySetting = false
     } else {
         displaySetting = false
         // Filter to just this hospitals purchases
