@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 # Flask Setup
 #################################################
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://xvgqssimiaylqo:91d15f5f6ca8c1040e8c893a726d452048416d88a86a65ab4d8603ab4ac8990f@ec2-44-206-89-185.compute-1.amazonaws.com:5432/d8uun7vml6l2na'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xvgqssimiaylqo:91d15f5f6ca8c1040e8c893a726d452048416d88a86a65ab4d8603ab4ac8990f@ec2-44-206-89-185.compute-1.amazonaws.com:5432/d8uun7vml6l2na'
 
 #################################################
 # Initialise Database and create DB model
