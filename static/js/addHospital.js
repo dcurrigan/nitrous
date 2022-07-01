@@ -5,7 +5,6 @@ var alert = []
 window.onload = function() {
     document.getElementById('errorHosp').innerHTML = alert[0];
     document.getElementById('whatError').innerHTML = alert[1]
-    console.log(alert[0].length)
 
     if ((alert[1] == 'already exists in the database') || (alert[1] == 'Please enter a hospital name')) {
         document.getElementById('failure').style.display = "block";
@@ -92,8 +91,6 @@ function sendData(){
             headers: new Headers({"content-type": "application/json"})
         })
         .then(response => { 
-            console.log("This is what I got back")
-            // console.log(response)
             response.json().then(json => {
                 console.log(json)
                 })
