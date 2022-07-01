@@ -101,7 +101,7 @@ def submitData():
     data = [u.__dict__ for u in hosp_query]
     for row in data:
         if row['name'] == name:
-            alert = ["", "Please enter a hospital name"]
+            alert = [name, "is already in the database"]
             return render_template('addHospital.html', alert=alert)
 
     address = request.form.get('street')
