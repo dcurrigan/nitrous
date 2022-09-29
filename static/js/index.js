@@ -60,7 +60,6 @@ function loadData(data, manifold_data, purchase_data) {
       })
     };
 
-    console.log(purchase_data)
     // Run optionChanged to fill the page with data for the first item in the dropdown
     optionChanged()
         
@@ -230,43 +229,46 @@ function optionChanged() {
           purchase = hospital_purchases[i]
 
           if (i == 0) {
-            // if this is the first purchase just add the push the date and all rates as 0 
+            // if this is the first purchase just push the date with all rates as 0 
             // as the first data point to be graphed
             consumptionRateData.date = purchase.date;
-            graphData.push(consumptionRateData)
-
+            graphData.push(consumptionRateData);
+            
           } else {
-            consumptionRateData = graphData[graphData.length - 1]
+            consumptionRateData = graphData[graphData.length - 1];
             consumptionRateData.date = purchase.date;
-            consumptionRateData.total = 0
+            consumptionRateData.total = 0;
+          }
 
-            cylinder_array.forEach(function(item) {              
+          cylinder_array.forEach(function(item) {              
+            
+            if (purchase[item] != 0) {
               
-              if (purchase[item] != 0) {
+              if (last_cylinder_values[item] == 0) {
+                // if this is first purchase for this cylinder type, add the date and amounts, 
+                // consumption rate stays at 0 until a second purchase is added
+                last_cylinder_values[item] = purchase[item] 
+                last_cylinder_dates[item] = purchase.date
                 
-                if (last_cylinder_values[item] == 0) {
-                  // if this is first purchase for this cylinder type, add the date and amounts, 
-                  // consumption rate stays at 0 until a second purchase is added
-                  last_cylinder_values[item] = purchase[item] 
-                  last_cylinder_dates[item] = purchase.date
+              } else {
+                
+                // a second purchase has been added for this cylinder type, so consumption rate can be calculated
+                let amountNO2 = getCO2Quantity(item, last_cylinder_values[item])
+                let difference = purchase.date.getTime() - last_cylinder_dates[item].getTime();
+                let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+                console.log(TotalDays)
+                let consumptionRate = (amountNO2 / TotalDays).toFixed(2)
+                consumptionRateData[item] = parseFloat(consumptionRate)
+                
+                last_cylinder_values[item] = purchase[item]
+                last_cylinder_dates[item] = purchase.date
 
-                } else {
-                  // a second purchase has been added for this cylinder type, so consumption rate can be calculated
-                  let amountNO2 = getCO2Quantity(item, last_cylinder_values[item])
-                  let difference = purchase.date.getTime() - last_cylinder_dates[item].getTime();
-                  let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-                  let consumptionRate = (amountNO2 / TotalDays).toFixed(2)
-                  consumptionRateData[item] = parseFloat(consumptionRate)
-                  
-                  last_cylinder_values[item] = purchase[item]
-                  last_cylinder_dates[item] = purchase.date
-
-                };
-                           
               };
+                          
+            };
 
-              consumptionRateData.total += parseFloat(consumptionRateData[item])
-            });
+            consumptionRateData.total += parseFloat(consumptionRateData[item])
+          });
 
             
             graphData.push(JSON.parse(JSON.stringify(consumptionRateData)))
@@ -274,7 +276,7 @@ function optionChanged() {
           };
 
 
-        };
+        // };
         
         var lineData = [{
                           x: unpack(graphData, 'date'),
