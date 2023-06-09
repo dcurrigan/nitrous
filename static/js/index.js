@@ -256,7 +256,6 @@ function optionChanged() {
                 let amountNO2 = getCO2Quantity(item, last_cylinder_values[item])
                 let difference = purchase.date.getTime() - last_cylinder_dates[item].getTime();
                 let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-                console.log(TotalDays)
                 let consumptionRate = (amountNO2 / TotalDays).toFixed(2)
                 consumptionRateData[item] = parseFloat(consumptionRate)
                 

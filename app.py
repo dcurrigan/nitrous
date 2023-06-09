@@ -4,13 +4,16 @@ from flask import Flask, jsonify, request
 from flask import render_template, redirect, url_for
 import json
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xvgqssimiaylqo:91d15f5f6ca8c1040e8c893a726d452048416d88a86a65ab4d8603ab4ac8990f@ec2-44-206-89-185.compute-1.amazonaws.com:5432/d8uun7vml6l2na'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+# postgresql://nitrous_user:jZce01ie7vIU1brnuzFZOESh4IVczwMo@dpg-cho5epvdvk4rn2t4lun0-a.singapore-postgres.render.com/nitrous
+
 
 #################################################
 # Initialise Database and create DB model
@@ -29,6 +32,7 @@ class Hospitals(db.Model):
     long = db.Column(db.Float)
     hosp_type = db.Column(db.String(200))
     region = db.Column(db.String(200))
+    network = db.Column(db.String(200))
     cases_adult = db.Column(db.Integer)
     cases_obs = db.Column(db.Integer)
     cases_paed = db.Column(db.Integer)
@@ -146,7 +150,7 @@ def submitData():
 
     new_hospital = Hospitals(name=name, address=address, suburb=suburb,
                              postcode=postcode, state=state, country=country,
-                             lat=lat, long=long, hosp_type=hosp_type, region=region,
+                             lat=lat, long=long, hosp_type=hosp_type, region=region, network="",
                              cases_adult=cases_adult, cases_obs=cases_obs, 
                              cases_paed=cases_paed, cases_burns=cases_burns, 
                              supplier=supplier, maintenance=maintenance, diagram=diagram,

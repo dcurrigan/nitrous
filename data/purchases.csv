@@ -1,0 +1,486 @@
+date,name,cylinder_c,cylinder_d,cylinder_e,cylinder_f8,cylinder_f9,cylinder_g,total
+1/01/2017,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/01/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/01/2017,Fiona Stanley Hospital,0,0,0,2,0,0,466.0
+1/01/2017,Kalamunda District Community Hospital,0,0,2,0,0,0,33.6
+1/01/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/01/2017,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/01/2017,Sir Charles Gairdner Hospital,1,0,0,0,0,0,1.75
+1/02/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/02/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/03/2017,Bentley Hospital,0,0,4,0,0,0,67.2
+1/03/2017,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/03/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/03/2017,Sir Charles Gairdner Hospital,1,2,0,0,0,0,14.95
+1/03/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/03/2017,Royal Perth Hospital,1,0,0,1,0,0,234.75
+1/04/2017,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/04/2017,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/04/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/04/2017,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/04/2017,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/05/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/05/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/05/2017,Sir Charles Gairdner Hospital,1,2,0,2,0,0,480.95
+1/05/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/05/2017,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/05/2017,Perth Children's Hospital,0,0,0,4,0,0,932.0
+1/06/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/06/2017,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/06/2017,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/07/2017,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/07/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/07/2017,Fiona Stanley Hospital,0,0,0,2,0,0,466.0
+1/07/2017,Kalamunda District Community Hospital,0,0,2,0,0,0,33.6
+1/07/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/07/2017,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/07/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/07/2017,Royal Perth Hospital,2,0,0,0,0,0,3.5
+1/07/2017,Perth Children's Hospital,0,0,0,0,0,2,73.2
+1/08/2017,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/08/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/08/2017,Sir Charles Gairdner Hospital,0,-1,0,0,0,0,-6.6
+1/08/2017,Royal Perth Hospital,0,0,0,1,0,3,342.8
+1/08/2017,Perth Children's Hospital,0,1,0,2,0,0,472.6
+1/09/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/09/2017,Fiona Stanley Hospital,0,0,0,2,0,0,466.0
+1/09/2017,Kalamunda District Community Hospital,0,0,6,0,0,0,100.8
+1/09/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/09/2017,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/09/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,16,585.6
+1/10/2017,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/10/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/10/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/10/2017,Sir Charles Gairdner Hospital,0,2,0,0,0,0,13.2
+1/11/2017,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/11/2017,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/11/2017,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/11/2017,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/12/2017,Bentley Hospital,0,0,2,0,0,0,33.6
+1/12/2017,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/01/2018,Armadale-Kelmscott Memorial Hospital,1,0,0,1,0,0,234.75
+1/01/2018,Kalamunda District Community Hospital,0,0,2,0,0,0,33.6
+1/01/2018,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/01/2018,Rockingham General Hospital,4,0,0,0,0,0,7.0
+1/01/2018,Sir Charles Gairdner Hospital,0,2,0,0,0,0,13.2
+1/01/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/02/2018,Bentley Hospital,0,0,3,0,0,0,50.400000000000006
+1/02/2018,Fiona Stanley Hospital,0,0,0,4,0,0,932.0
+1/02/2018,King Edward Memorial Hospital For Women,0,2,0,0,0,0,13.2
+1/02/2018,Royal Perth Hospital,1,0,0,1,0,0,234.75
+1/03/2018,Bentley Hospital,0,0,1,0,0,0,16.8
+1/03/2018,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/03/2018,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/03/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/04/2018,Bentley Hospital,0,0,2,0,0,0,33.6
+1/04/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/05/2018,Bentley Hospital,0,0,2,0,0,0,33.6
+1/05/2018,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/05/2018,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/05/2018,Perth Children's Hospital,1,0,0,0,0,0,1.75
+1/06/2018,Armadale-Kelmscott Memorial Hospital,0,0,0,2,0,0,466.0
+1/06/2018,Bentley Hospital,0,0,2,0,0,0,33.6
+1/06/2018,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/06/2018,Sir Charles Gairdner Hospital,0,3,0,2,0,0,485.8
+1/06/2018,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/06/2018,Perth Children's Hospital,2,0,0,0,0,0,3.5
+1/07/2018,Bentley Hospital,0,0,4,0,0,0,67.2
+1/07/2018,Osborne Park Hospital,1,0,0,0,0,0,1.75
+1/07/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/07/2018,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/08/2018,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/08/2018,Bentley Hospital,0,0,2,0,0,0,33.6
+1/08/2018,Fiona Stanley Hospital,0,0,0,2,0,0,466.0
+1/08/2018,Sir Charles Gairdner Hospital,0,0,0,2,0,0,466.0
+1/08/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/09/2018,Bentley Hospital,0,0,4,0,0,0,67.2
+1/09/2018,Fiona Stanley Hospital,0,0,0,0,0,0,0.0
+1/09/2018,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/09/2018,Sir Charles Gairdner Hospital,0,2,0,0,0,0,13.2
+1/10/2018,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/10/2018,Bentley Hospital,0,0,2,0,0,6,253.2
+1/10/2018,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/10/2018,Kalamunda District Community Hospital,0,0,1,0,0,0,16.8
+1/10/2018,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/10/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,16,585.6
+1/10/2018,Royal Perth Hospital,1,0,0,1,0,0,234.75
+1/10/2018,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/11/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/11/2018,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/11/2018,Perth Children's Hospital,1,0,0,0,0,0,1.75
+1/12/2018,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/12/2018,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/12/2018,Sir Charles Gairdner Hospital,0,3,0,0,0,0,19.8
+1/12/2018,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/12/2018,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/01/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/01/2019,Osborne Park Hospital,0,0,0,0,0,8,292.8
+1/01/2019,Sir Charles Gairdner Hospital,0,0,0,2,0,0,466.0
+1/02/2019,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/02/2019,Sir Charles Gairdner Hospital,1,1,0,0,0,0,8.35
+1/02/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/02/2019,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/03/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/03/2019,Fiona Stanley Hospital,0,0,0,4,0,0,932.0
+1/03/2019,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/03/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/03/2019,Royal Perth Hospital,2,0,0,0,0,0,3.5
+1/03/2019,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/04/2019,Osborne Park Hospital,0,0,0,0,0,1,36.6
+1/04/2019,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/04/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/04/2019,Royal Perth Hospital,0,0,0,2,0,0,466.0
+1/05/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/05/2019,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/06/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/06/2019,Osborne Park Hospital,0,0,0,0,0,3,109.8
+1/06/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/07/2019,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/07/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/07/2019,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/07/2019,Sir Charles Gairdner Hospital,1,0,0,2,0,0,467.75
+1/07/2019,King Edward Memorial Hospital For Women,0,1,0,0,0,0,6.6
+1/07/2019,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/07/2019,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/08/2019,Armadale-Kelmscott Memorial Hospital,1,0,0,0,0,0,1.75
+1/08/2019,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/08/2019,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/08/2019,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/08/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,24,878.4000000000001
+1/08/2019,Perth Children's Hospital,2,0,0,0,0,0,3.5
+1/09/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/09/2019,Rockingham General Hospital,1,0,0,0,0,0,1.75
+1/10/2019,Armadale-Kelmscott Memorial Hospital,0,0,0,2,0,0,466.0
+1/10/2019,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/10/2019,Osborne Park Hospital,2,0,0,0,0,4,149.9
+1/11/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/11/2019,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/11/2019,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/11/2019,Royal Perth Hospital,1,0,0,1,0,0,234.75
+1/12/2019,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/12/2019,Bentley Hospital,0,0,0,0,0,2,73.2
+1/12/2019,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/12/2019,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/12/2019,Rockingham General Hospital,1,0,0,2,0,0,467.75
+1/12/2019,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/12/2019,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/01/2020,Sir Charles Gairdner Hospital,0,1,0,2,0,0,472.6
+1/01/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/01/2020,Perth Children's Hospital,0,3,0,0,0,0,19.8
+1/02/2020,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/02/2020,Bentley Hospital,0,0,0,0,0,2,73.2
+1/02/2020,Osborne Park Hospital,2,0,0,0,0,4,149.9
+1/02/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/03/2020,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/03/2020,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/04/2020,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/04/2020,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/04/2020,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/04/2020,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/04/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/06/2020,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/06/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/06/2020,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/07/2020,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/07/2020,Bentley Hospital,0,0,0,0,0,2,73.2
+1/07/2020,Rockingham General Hospital,2,0,0,0,0,0,3.5
+1/07/2020,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/07/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/07/2020,Perth Children's Hospital,1,0,0,0,0,0,1.75
+1/08/2020,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/08/2020,Rockingham General Hospital,1,0,0,1,0,0,234.75
+1/09/2020,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/09/2020,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/09/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/09/2020,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/09/2020,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/10/2020,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/10/2020,Rockingham General Hospital,1,0,0,0,0,0,1.75
+1/10/2020,Sir Charles Gairdner Hospital,0,0,0,2,0,0,466.0
+1/10/2020,King Edward Memorial Hospital For Women,0,1,0,0,0,8,299.40000000000003
+1/11/2020,Rockingham General Hospital,2,0,0,1,0,0,236.5
+1/11/2020,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/12/2020,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/12/2020,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/12/2020,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/12/2020,Sir Charles Gairdner Hospital,0,2,0,0,0,0,13.2
+1/12/2020,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/12/2020,Royal Perth Hospital,1,0,0,0,0,0,1.75
+1/12/2020,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/01/2021,Bentley Hospital,0,0,0,0,0,2,73.2
+1/01/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/02/2021,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/02/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/03/2021,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/03/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/03/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/03/2021,Perth Children's Hospital,0,0,0,0,0,1,36.6
+1/04/2021,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/04/2021,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/04/2021,Rockingham General Hospital,1,0,0,1,0,0,234.75
+1/04/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/04/2021,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/04/2021,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/05/2021,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/05/2021,Royal Perth Hospital,3,3,0,0,0,0,25.05
+1/06/2021,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/06/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/06/2021,Sir Charles Gairdner Hospital,0,0,0,2,0,0,466.0
+1/06/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/06/2021,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/07/2021,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/07/2021,Bentley Hospital,0,0,0,0,0,4,146.4
+1/07/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/07/2021,King Edward Memorial Hospital For Women,1,0,2,0,0,0,35.35
+1/08/2021,Osborne Park Hospital,1,0,0,0,0,4,148.15
+1/08/2021,Rockingham General Hospital,1,0,0,0,0,0,1.75
+1/08/2021,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/08/2021,King Edward Memorial Hospital For Women,2,0,0,0,0,0,3.5
+1/08/2021,Perth Children's Hospital,2,0,0,0,0,0,3.5
+1/09/2021,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/09/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/09/2021,Perth Children's Hospital,-2,0,0,0,0,0,-3.5
+1/10/2021,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/10/2021,Rockingham General Hospital,1,0,0,1,0,0,234.75
+1/10/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,6,219.6
+1/10/2021,Royal Perth Hospital,0,0,0,0,0,3,109.8
+1/11/2021,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/11/2021,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/11/2021,Sir Charles Gairdner Hospital,1,0,0,0,0,0,1.75
+1/11/2021,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/12/2021,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/12/2021,Osborne Park Hospital,0,0,0,0,0,2,73.2
+1/12/2021,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/01/2017,Busselton Hospital,0,0,0,0,0,2,73.2
+1/01/2017,Derby Hospital,0,0,2,0,0,0,33.6
+1/01/2017,Albany Hospital,0,1,0,0,0,2,79.8
+1/01/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/01/2018,Albany Hospital,0,0,0,0,0,2,73.2
+1/01/2018,Katanning Hospital,0,0,2,0,0,0,33.6
+1/01/2019,Derby Hospital,0,0,2,0,0,0,33.6
+1/01/2019,Albany Hospital,0,0,0,0,0,2,73.2
+1/01/2019,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/01/2019,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/01/2019,Merredin Hospital,0,0,1,0,0,0,16.8
+1/01/2019,Mullewa Hospital,0,1,0,0,0,0,6.6
+1/01/2020,Albany Hospital,0,0,0,0,0,2,73.2
+1/01/2020,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/01/2021,Busselton Hospital,0,0,0,0,0,2,73.2
+1/01/2021,Derby Hospital,0,0,2,0,0,0,33.6
+1/01/2021,Albany Hospital,0,0,1,0,0,2,90.0
+1/01/2021,Warren Hospital,0,0,0,0,0,2,73.2
+1/02/2017,Busselton Hospital,0,0,0,0,0,0,0.0
+1/02/2017,Derby Hospital,0,0,2,0,0,0,33.6
+1/02/2017,Albany Hospital,0,0,0,0,0,2,73.2
+1/02/2017,Broome Hospital,0,4,0,0,0,0,26.4
+1/02/2017,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/02/2017,Margaret River Hospital,0,0,0,0,0,2,73.2
+1/02/2018,Derby Hospital,0,0,2,0,0,0,33.6
+1/02/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/02/2018,Kununurra Hospital,1,0,2,0,0,0,35.4
+1/02/2018,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/02/2018,Broome Hospital,0,1,0,0,0,0,6.6
+1/02/2019,Derby Hospital,0,0,2,0,0,0,33.6
+1/02/2019,Albany Hospital,0,0,0,0,0,4,146.4
+1/02/2019,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/02/2019,Broome Hospital,0,1,0,0,0,4,153.0
+1/02/2019,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/02/2019,Plantagenet Hospital,0,0,1,0,0,0,16.8
+1/02/2020,Derby Hospital,0,1,0,0,0,0,6.6
+1/02/2020,Broome Hospital,1,1,0,0,0,0,8.4
+1/02/2021,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/02/2021,Broome Hospital,0,0,0,0,0,2,73.2
+1/02/2021,Kalgoorlie Hospital,0,3,0,0,0,0,19.8
+1/02/2021,Margaret River Hospital,1,0,0,0,0,0,1.8
+1/03/2017,Albany Hospital,0,1,0,0,0,4,153.0
+1/03/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/03/2017,Katanning Hospital,0,0,2,0,0,0,33.6
+1/03/2017,Broome Hospital,0,0,0,0,0,2,73.2
+1/03/2017,Margaret River Hospital,0,0,0,0,0,1,36.6
+1/03/2017,Denmark Hospital,0,0,0,0,0,1,36.6
+1/03/2017,Northam Hospital,0,0,0,0,0,2,73.2
+1/03/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/03/2018,Warren Hospital,0,0,0,0,0,4,146.4
+1/03/2018,Broome Hospital,0,0,0,0,0,2,73.2
+1/03/2019,Derby Hospital,0,1,2,0,0,0,40.2
+1/03/2019,Albany Hospital,0,0,0,0,0,4,146.4
+1/03/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/03/2020,Albany Hospital,0,0,0,0,0,2,73.2
+1/03/2020,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/03/2020,Broome Hospital,0,0,0,0,0,4,146.4
+1/03/2021,Derby Hospital,0,0,2,0,0,0,33.6
+1/03/2021,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/03/2021,Broome Hospital,0,1,0,0,0,0,6.6
+1/03/2021,Halls Creek Hospital,1,0,0,0,0,0,1.8
+1/04/2017,Busselton Hospital,0,0,0,0,0,2,73.2
+1/04/2017,Albany Hospital,0,0,0,0,0,2,73.2
+1/04/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/04/2017,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/04/2017,Warren Hospital,0,0,2,0,0,0,33.6
+1/04/2018,Albany Hospital,0,0,0,0,0,6,219.6
+1/04/2018,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/04/2018,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/04/2018,Broome Hospital,0,3,0,0,0,0,19.8
+1/04/2019,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/04/2019,Broome Hospital,0,0,0,0,0,4,146.4
+1/04/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/04/2020,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/04/2021,Albany Hospital,0,0,0,0,0,4,146.4
+1/04/2021,Augusta Hospital,0,1,0,0,0,0,6.6
+1/05/2017,Albany Hospital,0,0,0,0,0,4,146.4
+1/05/2017,Kununurra Hospital,1,0,0,0,0,0,1.8
+1/05/2017,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/05/2018,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/05/2018,Katanning Hospital,0,0,2,0,0,0,33.6
+1/05/2018,Broome Hospital,0,1,0,0,0,0,6.6
+1/05/2018,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/05/2019,Derby Hospital,0,1,2,0,0,0,40.2
+1/05/2019,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/05/2019,Warren Hospital,0,0,0,0,0,2,73.2
+1/05/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/05/2020,Broome Hospital,0,0,0,0,0,2,73.2
+1/05/2020,Bridgetown Hospital,1,0,0,0,0,0,1.8
+1/05/2021,Busselton Hospital,0,0,0,0,0,2,73.2
+1/05/2021,Derby Hospital,0,0,4,0,0,0,67.2
+1/05/2021,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/05/2021,Broome Hospital,0,2,0,0,0,2,86.4
+1/05/2021,Esperance Hospital,0,0,0,0,0,2,73.2
+1/06/2017,Busselton Hospital,0,0,0,0,0,2,73.2
+1/06/2017,Derby Hospital,0,0,2,0,0,0,33.6
+1/06/2017,Albany Hospital,0,0,0,0,0,4,146.4
+1/06/2017,Kununurra Hospital,1,0,2,0,0,0,35.4
+1/06/2017,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/06/2017,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/06/2017,Warren Hospital,0,0,4,0,0,0,67.2
+1/06/2017,Broome Hospital,0,0,0,0,0,2,73.2
+1/06/2017,Esperance Hospital,0,0,0,0,0,2,73.2
+1/06/2017,Carnarvon Hospital,0,0,0,0,0,3,109.8
+1/06/2018,Derby Hospital,0,0,2,0,0,0,33.6
+1/06/2018,Albany Hospital,0,0,0,0,0,2,73.2
+1/06/2018,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/06/2018,Broome Hospital,0,0,0,0,0,2,73.2
+1/06/2019,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/06/2019,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/06/2019,Esperance Hospital,0,0,0,0,0,3,109.8
+1/06/2019,Fitzroy Crossing Hospital,0,0,2,0,0,0,33.6
+1/06/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/06/2020,Albany Hospital,0,0,2,0,0,2,106.8
+1/06/2020,Halls Creek Hospital,1,0,0,0,0,0,1.8
+1/06/2020,Esperance Hospital,0,0,0,0,0,1,36.6
+1/06/2020,Carnarvon Hospital,0,0,0,0,0,3,109.8
+1/06/2020,Fitzroy Crossing Hospital,0,0,2,0,0,0,33.6
+1/06/2021,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/06/2021,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/06/2021,Warren Hospital,0,0,0,0,0,2,73.2
+1/07/2017,Albany Hospital,0,0,0,0,0,2,73.2
+1/07/2017,Broome Hospital,0,0,0,0,0,2,73.2
+1/07/2017,Esperance Hospital,0,0,0,0,0,1,36.6
+1/07/2018,Albany Hospital,0,0,0,0,0,2,73.2
+1/07/2018,Broome Hospital,0,1,0,0,0,0,6.6
+1/07/2018,Plantagenet Hospital,0,0,1,0,0,0,16.8
+1/07/2019,Albany Hospital,0,0,0,0,0,2,73.2
+1/07/2019,Kununurra Hospital,1,0,0,0,0,0,1.8
+1/07/2019,Katanning Hospital,1,0,0,0,0,0,1.8
+1/07/2019,Geraldton Hospital,0,0,0,0,0,4,146.4
+1/07/2019,Broome Hospital,0,1,0,0,0,0,6.6
+1/07/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/07/2020,Albany Hospital,0,0,0,0,0,2,73.2
+1/07/2020,Northam Hospital,0,0,0,0,0,2,73.2
+1/07/2021,Derby Hospital,0,1,2,0,0,0,40.2
+1/07/2021,Albany Hospital,0,0,0,0,0,2,73.2
+1/07/2021,Broome Hospital,0,1,0,0,0,2,79.8
+1/07/2021,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/07/2021,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/08/2017,Albany Hospital,0,0,0,0,0,4,146.4
+1/08/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/08/2017,Katanning Hospital,0,0,2,0,0,0,33.6
+1/08/2017,Broome Hospital,0,1,0,0,0,0,6.6
+1/08/2018,Derby Hospital,0,0,2,0,0,0,33.6
+1/08/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/08/2018,Karratha Health Campus,0,0,0,0,0,4,146.4
+1/08/2018,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/08/2018,Fitzroy Crossing Hospital,0,1,0,0,0,0,6.6
+1/08/2018,Bunbury Hospital,0,0,0,0,0,0,0.0
+1/08/2019,Derby Hospital,0,2,2,0,0,0,46.8
+1/08/2019,Albany Hospital,0,0,0,0,0,2,73.2
+1/08/2019,Kununurra Hospital,1,0,0,0,0,0,1.8
+1/08/2019,Broome Hospital,0,0,0,0,0,4,146.4
+1/08/2019,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/08/2019,Augusta Hospital,0,1,0,0,0,0,6.6
+1/08/2020,Derby Hospital,0,0,4,0,0,0,67.2
+1/08/2020,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/08/2020,Broome Hospital,1,0,0,0,0,3,111.6
+1/08/2020,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/08/2021,Derby Hospital,0,1,2,0,0,0,40.2
+1/08/2021,Warren Hospital,0,0,0,0,0,2,73.2
+1/08/2021,Broome Hospital,1,0,0,0,0,0,1.8
+1/08/2021,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/09/2017,Albany Hospital,0,0,0,0,0,2,73.2
+1/09/2017,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/09/2018,Albany Hospital,0,0,0,0,0,2,73.2
+1/09/2018,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/09/2019,Derby Hospital,0,0,2,0,0,0,33.6
+1/09/2019,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/09/2019,Northam Hospital,0,0,0,0,0,2,73.2
+1/09/2020,Derby Hospital,0,0,1,0,0,0,16.8
+1/09/2020,Kununurra Hospital,1,0,0,0,0,0,1.8
+1/09/2021,Derby Hospital,0,0,2,0,0,0,33.6
+1/09/2021,Albany Hospital,0,0,0,0,0,2,73.2
+1/09/2021,Warren Hospital,0,0,0,0,0,3,109.8
+1/09/2021,Broome Hospital,1,1,0,0,0,0,8.4
+1/09/2021,Northam Hospital,0,0,0,0,0,2,73.2
+1/10/2017,Albany Hospital,1,0,0,0,0,2,75.0
+1/10/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/10/2017,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/10/2017,Broome Hospital,0,0,0,0,0,2,73.2
+1/10/2017,Bridgetown Hospital,0,0,0,0,0,4,146.4
+1/10/2018,Derby Hospital,0,0,2,0,0,0,33.6
+1/10/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/10/2018,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/10/2018,Broome Hospital,0,1,0,0,0,0,6.6
+1/10/2018,Esperance Hospital,0,0,0,0,0,2,73.2
+1/10/2019,Derby Hospital,0,0,3,0,0,0,50.4
+1/10/2019,Albany Hospital,0,0,0,0,0,2,73.2
+1/10/2019,Geraldton Hospital,0,0,0,0,0,4,146.4
+1/10/2019,Broome Hospital,0,0,0,0,0,2,73.2
+1/10/2019,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/10/2019,Esperance Hospital,0,0,0,0,0,2,73.2
+1/10/2020,Derby Hospital,0,0,4,0,0,0,67.2
+1/10/2020,Albany Hospital,0,1,0,0,0,2,79.8
+1/10/2020,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/10/2020,Broome Hospital,0,0,0,0,0,2,73.2
+1/10/2021,Busselton Hospital,0,0,0,0,0,2,73.2
+1/10/2021,Karratha Health Campus,0,0,0,0,0,2,73.2
+1/10/2021,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/10/2021,Warren Hospital,0,0,0,0,0,5,183.0
+1/10/2021,Broome Hospital,0,0,0,0,0,2,73.2
+1/11/2017,Albany Hospital,0,0,0,0,0,4,146.4
+1/11/2017,Broome Hospital,0,1,0,0,0,0,6.6
+1/11/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/11/2019,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/11/2019,Fitzroy Crossing Hospital,0,1,0,0,0,0,6.6
+1/11/2020,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/11/2020,Broome Hospital,0,0,0,0,0,2,73.2
+1/11/2021,Albany Hospital,0,0,0,0,0,2,73.2
+1/11/2021,Warren Hospital,0,0,0,0,0,2,73.2
+1/11/2021,Broome Hospital,0,0,0,0,0,2,73.2
+1/12/2017,Albany Hospital,0,0,0,0,0,4,146.4
+1/12/2017,Kununurra Hospital,0,0,2,0,0,0,33.6
+1/12/2017,Broome Hospital,0,0,0,0,0,2,73.2
+1/12/2018,Derby Hospital,0,0,2,0,0,0,33.6
+1/12/2018,Albany Hospital,0,0,0,0,0,4,146.4
+1/12/2018,Broome Hospital,0,0,0,0,0,2,73.2
+1/12/2018,Northam Hospital,0,0,0,0,0,2,73.2
+1/12/2019,Derby Hospital,0,0,4,0,0,0,67.2
+1/12/2019,Albany Hospital,0,0,1,0,0,0,16.8
+1/12/2019,Broome Hospital,1,1,0,0,0,1,45.0
+1/12/2019,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/12/2020,Derby Hospital,0,0,2,0,0,0,33.6
+1/12/2020,Warren Hospital,0,0,0,0,0,2,73.2
+1/12/2020,Kalgoorlie Hospital,0,1,0,0,0,0,6.6
+1/12/2021,Busselton Hospital,0,1,0,0,0,0,6.6
+1/12/2021,Albany Hospital,0,0,0,0,0,2,73.2
+1/12/2021,Kununurra Hospital,2,0,2,0,0,0,37.1
+1/12/2021,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/12/2021,Warren Hospital,0,0,0,0,0,4,146.4
+1/12/2021,Margaret River Hospital,0,0,0,0,0,1,36.6
