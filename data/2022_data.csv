@@ -1,0 +1,93 @@
+date,name,cylinder_c,cylinder_d,cylinder_e,cylinder_f8,cylinder_f9,cylinder_g,total
+1/01/2022,Bentley Hospital,0,0,0,0,0,2,73.2
+1/01/2022,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/01/2022,Armadale-Kelmscott Memorial Hospital,1,0,0,0,0,0,1.8
+1/01/2022,Rockingham General Hospital,1,0,0,0,0,0,1.8
+1/01/2022,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/01/2022,Perth Children's Hospital,2,0,0,0,0,0,3.5
+1/01/2022,Sir Charles Gairdner Hospital,0,1,0,0,0,0,6.6
+1/01/2022,Merredin Hospital,0,0,1,0,0,0,16.8
+1/01/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/01/2022,Esperance Hospital,0,0,0,0,0,1,36.6
+1/01/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/02/2022,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/02/2022,Royal Perth Hospital,1,0,0,0,0,0,1.8
+1/02/2022,Osborne Park Hospital,4,0,0,0,0,4,153.4
+1/02/2022,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/02/2022,Warren Hospital,0,0,0,0,0,4,146.4
+1/02/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/02/2022,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/02/2022,Northam Hospital,0,1,0,0,0,0,6.6
+1/03/2022,Bentley Hospital,0,0,0,0,0,2,73.2
+1/03/2022,Rockingham General Hospital,3,1,1,0,0,0,28.6
+1/03/2022,Sir Charles Gairdner Hospital,0,3,0,0,0,0,19.8
+1/03/2022,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/03/2022,Warren Hospital,0,0,0,0,0,4,146.4
+1/03/2022,Esperance Hospital,0,0,0,0,0,2,73.2
+1/03/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/03/2022,Busselton Hospital,0,0,0,0,0,2,73.2
+1/04/2022,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/04/2022,Armadale-Kelmscott Memorial Hospital,2,0,0,0,0,0,3.5
+1/04/2022,Perth Children's Hospital,0,0,0,2,0,0,466.0
+1/04/2022,Sir Charles Gairdner Hospital,0,0,0,2,0,0,466.0
+1/04/2022,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/04/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/05/2022,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/05/2022,Rockingham General Hospital,1,0,0,0,0,0,1.8
+1/05/2022,Sir Charles Gairdner Hospital,1,0,0,0,0,0,1.8
+1/05/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/05/2022,Esperance Hospital,0,0,0,0,0,1,36.6
+1/05/2022,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/05/2022,Northam Hospital,0,1,0,0,0,0,6.6
+1/06/2022,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/06/2022,Royal Perth Hospital,0,1,0,0,0,0,6.6
+1/06/2022,Osborne Park Hospital,0,0,0,0,0,2,73.2
+1/06/2022,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/06/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/06/2022,Kalgoorlie Hospital,0,0,0,1,0,0,233.0
+1/07/2022,Bentley Hospital,0,0,0,0,0,2,73.2
+1/07/2022,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/07/2022,Rockingham General Hospital,3,0,0,0,0,0,5.2
+1/07/2022,Perth Children's Hospital,0,0,0,1,0,0,233.0
+1/07/2022,Warren Hospital,0,0,0,0,0,4,146.4
+1/07/2022,Albany Hospital,0,0,0,0,0,4,146.4
+1/07/2022,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/07/2022,Northam Hospital,0,0,0,0,0,2,73.2
+1/07/2022,Bridgetown Hospital,0,0,0,0,0,2,73.2
+1/08/2022,King Edward Memorial Hospital For Women,4,0,0,0,0,0,7.0
+1/08/2022,Rockingham General Hospital,1,0,0,1,0,0,234.8
+1/08/2022,Perth Children's Hospital,0,0,0,-1,0,0,-233.0
+1/08/2022,Osborne Park Hospital,1,0,0,0,0,0,1.8
+1/08/2022,Fiona Stanley Hospital,0,0,0,2,0,0,466.0
+1/08/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/09/2022,King Edward Memorial Hospital For Women,4,0,0,0,0,8,299.8
+1/09/2022,Armadale-Kelmscott Memorial Hospital,0,0,0,1,0,0,233.0
+1/09/2022,Rockingham General Hospital,1,0,0,0,0,0,1.8
+1/09/2022,Sir Charles Gairdner Hospital,0,1,0,4,0,0,938.6
+1/09/2022,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/09/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/09/2022,Albany Hospital,0,0,0,0,0,4,146.4
+1/09/2022,Geraldton Hospital,0,0,0,0,0,2,73.2
+1/09/2022,Northam Hospital,0,0,0,0,0,4,146.4
+1/09/2022,Busselton Hospital,0,0,0,0,0,2,73.2
+1/10/2022,Perth Children's Hospital,0,1,0,0,0,0,6.6
+1/10/2022,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/10/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/10/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/10/2022,Katanning Hospital,0,0,2,0,0,0,33.6
+1/11/2022,King Edward Memorial Hospital For Women,0,0,0,0,0,8,292.8
+1/11/2022,Armadale-Kelmscott Memorial Hospital,2,0,0,1,0,0,236.5
+1/11/2022,Royal Perth Hospital,0,0,0,1,0,0,233.0
+1/11/2022,Perth Children's Hospital,0,1,0,0,0,0,6.6
+1/11/2022,Sir Charles Gairdner Hospital,0,1,0,2,0,0,472.6
+1/11/2022,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/11/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/11/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/12/2022,Armadale-Kelmscott Memorial Hospital,2,0,0,0,0,0,3.5
+1/12/2022,Rockingham General Hospital,0,0,0,1,0,0,233.0
+1/12/2022,Sir Charles Gairdner Hospital,1,1,0,0,0,0,8.4
+1/12/2022,Osborne Park Hospital,0,0,0,0,0,4,146.4
+1/12/2022,Fiona Stanley Hospital,0,0,0,1,0,0,233.0
+1/12/2022,Warren Hospital,0,0,0,0,0,2,73.2
+1/12/2022,Albany Hospital,0,0,0,0,0,2,73.2
+1/12/2022,Geraldton Hospital,0,0,0,0,0,2,73.2

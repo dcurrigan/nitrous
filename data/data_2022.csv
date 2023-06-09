@@ -1,0 +1,102 @@
+﻿date,name,cylinder,units
+1/01/2022,Bentley Hospital,cylinder_g,2
+1/01/2022,King Edward Memorial Hospital For Women,cylinder_g,8
+1/01/2022,Armadale-Kelmscott Memorial Hospital,cylinder_c,1
+1/01/2022,Rockingham General Hospital,cylinder_c,1
+1/01/2022,Royal Perth Hospital,cylinder_f8,1
+1/01/2022,Perth Children's Hospital,cylinder_c,2
+1/01/2022,Sir Charles Gairdner Hospital,cylinder_d,1
+1/02/2022,Osborne Park Hospital,cylinder_g,4
+1/02/2022,Royal Perth Hospital,cylinder_c,1
+1/02/2022,Osborne Park Hospital,cylinder_c,4
+1/02/2022,Fiona Stanley Hospital,cylinder_f8,1
+1/02/2022,Armadale-Kelmscott Memorial Hospital,cylinder_f8,1
+1/03/2022,Fiona Stanley Hospital,cylinder_f8,1
+1/03/2022,Bentley Hospital,cylinder_g,2
+1/03/2022,Sir Charles Gairdner Hospital,cylinder_d,3
+1/03/2022,Rockingham General Hospital,cylinder_c,3
+1/03/2022,Rockingham General Hospital,cylinder_e,1
+1/03/2022,Rockingham General Hospital,cylinder_d,1
+1/04/2022,Perth Children's Hospital,cylinder_f8,2
+1/04/2022,Sir Charles Gairdner Hospital,cylinder_f8,2
+1/04/2022,Osborne Park Hospital,cylinder_g,4
+1/04/2022,King Edward Memorial Hospital For Women,cylinder_g,8
+1/04/2022,Armadale-Kelmscott Memorial Hospital,cylinder_c,2
+1/05/2022,Armadale-Kelmscott Memorial Hospital,cylinder_f8,1
+1/05/2022,Rockingham General Hospital,cylinder_c,1
+1/05/2022,Sir Charles Gairdner Hospital,cylinder_c,1
+1/06/2022,Royal Perth Hospital,cylinder_d,1
+1/06/2022,Rockingham General Hospital,cylinder_f8,1
+1/06/2022,Fiona Stanley Hospital,cylinder_f8,1
+1/06/2022,Osborne Park Hospital,cylinder_g,2
+1/07/2022,Bentley Hospital,cylinder_g,2
+1/07/2022,Rockingham General Hospital,cylinder_c,3
+1/07/2022,King Edward Memorial Hospital For Women,cylinder_g,8
+1/07/2022,Perth Children's Hospital,cylinder_f8,1
+1/08/2022,King Edward Memorial Hospital For Women,cylinder_c,4
+1/08/2022,Osborne Park Hospital,cylinder_c,1
+1/08/2022,Fiona Stanley Hospital,cylinder_f8,2
+1/08/2022,Rockingham General Hospital,cylinder_c,1
+1/08/2022,Rockingham General Hospital,cylinder_f8,1
+1/08/2022,Perth Children's Hospital,cylinder_f8,-1
+1/09/2022,Osborne Park Hospital,cylinder_g,4
+1/09/2022,Sir Charles Gairdner Hospital,cylinder_d,1
+1/09/2022,Sir Charles Gairdner Hospital,cylinder_f8,4
+1/09/2022,Rockingham General Hospital,cylinder_c,1
+1/09/2022,King Edward Memorial Hospital For Women,cylinder_g,8
+1/09/2022,King Edward Memorial Hospital For Women,cylinder_c,4
+1/09/2022,Armadale-Kelmscott Memorial Hospital,cylinder_f8,1
+1/10/2022,Perth Children's Hospital,cylinder_d,1
+1/10/2022,Osborne Park Hospital,cylinder_g,4
+1/11/2022,Royal Perth Hospital,cylinder_f8,1
+1/11/2022,Sir Charles Gairdner Hospital,cylinder_f8,2
+1/11/2022,Perth Children's Hospital,cylinder_d,1
+1/11/2022,Osborne Park Hospital,cylinder_g,4
+1/11/2022,King Edward Memorial Hospital For Women,cylinder_g,8
+1/11/2022,Armadale-Kelmscott Memorial Hospital,cylinder_c,2
+1/11/2022,Sir Charles Gairdner Hospital,cylinder_d,1
+1/11/2022,Armadale-Kelmscott Memorial Hospital,cylinder_f8,1
+1/12/2022,Fiona Stanley Hospital,cylinder_f8,1
+1/12/2022,Sir Charles Gairdner Hospital,cylinder_d,1
+1/12/2022,Armadale-Kelmscott Memorial Hospital,cylinder_c,2
+1/12/2022,Rockingham General Hospital,cylinder_f8,1
+1/12/2022,Osborne Park Hospital,cylinder_g,4
+1/12/2022,Sir Charles Gairdner Hospital,cylinder_c,1
+1/01/2022,Merredin Hospital,cylinder_e,1
+1/01/2022,Warren Hospital,cylinder_g,2
+1/01/2022,Esperance Hospital,cylinder_g,1
+1/01/2022,Albany Hospital,cylinder_g,2
+1/02/2022,Geraldton Hospital,cylinder_g,2
+1/02/2022,Northam Hospital,cylinder_d,1
+1/02/2022,Albany Hospital,cylinder_g,2
+1/02/2022,Warren Hospital,cylinder_g,4
+1/03/2022,Busselton Hospital,cylinder_g,2
+1/03/2022,Warren Hospital,cylinder_g,4
+1/03/2022,Esperance Hospital,cylinder_g,2
+1/03/2022,Albany Hospital,cylinder_g,2
+1/04/2022,Albany Hospital,cylinder_g,2
+1/05/2022,Geraldton Hospital,cylinder_g,2
+1/05/2022,Esperance Hospital,cylinder_g,1
+1/05/2022,Warren Hospital,cylinder_g,2
+1/05/2022,Northam Hospital,cylinder_d,1
+1/06/2022,Warren Hospital,cylinder_g,2
+1/06/2022,Kalgoorlie Hospital,cylinder_f8,1
+1/07/2022,Albany Hospital,cylinder_g,4
+1/07/2022,Warren Hospital,cylinder_g,4
+1/07/2022,Northam Hospital,cylinder_g,2
+1/07/2022,Bridgetown Hospital,cylinder_g,2
+1/07/2022,Geraldton Hospital,cylinder_g,2
+1/08/2022,Albany Hospital,cylinder_g,2
+1/09/2022,Warren Hospital,cylinder_g,2
+1/09/2022,Busselton Hospital,cylinder_g,2
+1/09/2022,Geraldton Hospital,cylinder_g,2
+1/09/2022,Northam Hospital,cylinder_g,4
+1/09/2022,Albany Hospital,cylinder_g,4
+1/10/2022,Katanning Hospital,cylinder_e,2
+1/10/2022,Albany Hospital,cylinder_g,2
+1/10/2022,Warren Hospital,cylinder_g,2
+1/11/2022,Albany Hospital,cylinder_g,2
+1/11/2022,Warren Hospital,cylinder_g,2
+1/12/2022,Albany Hospital,cylinder_g,2
+1/12/2022,Warren Hospital,cylinder_g,2
+1/12/2022,Geraldton Hospital,cylinder_g,2

@@ -12,6 +12,7 @@ $(document).on('change','#selDataset',function(){
 // Renders data on initial page load
 function loadData(data, manifold_data, purchase_data) {
   
+    console.log(data)
     // Get unique hospital names
     hospitals = d3.map(data, function(d){return d.name;}).keys()
     
