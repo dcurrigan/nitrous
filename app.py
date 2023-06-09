@@ -11,7 +11,7 @@ import os
 # Flask Setup
 #################################################
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nitrous_user:jZce01ie7vIU1brnuzFZOESh4IVczwMo@dpg-cho5epvdvk4rn2t4lun0-a.singapore-postgres.render.com/nitrous'
 # postgresql://nitrous_user:jZce01ie7vIU1brnuzFZOESh4IVczwMo@dpg-cho5epvdvk4rn2t4lun0-a.singapore-postgres.render.com/nitrous
 
 
