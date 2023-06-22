@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="./static/js/compare.js"></script>
 </head>
 
 <body>
@@ -27,15 +27,6 @@
         <li class="nav-item active">
             <a class="nav-link" href="/" style="color:white;">Home <span class="sr-only">(current)</span></a>
         </li>
-        <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
-            Add
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/newhosp">New Hospital</a>
-            <a class="dropdown-item" href="/newpurchase">New Purchase</a>
-            </div>
-        </li> -->
         <li class="nav-item">
             <a class="nav-link" href="/compare" style="color:white;">Compare</a>
         </li> 
@@ -49,18 +40,18 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>N<sub>2</sub>O use in WA Hospitals</h1>
-        <p>Use the interactive charts below to explore hospital data</p>
+        <p>Use the interactive charts below to compare statewide data</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-3">
         <div class="well">
-          <h5><strong>Select Hospital</strong></h5>
+          <h5><strong>Select Item</strong></h5>
           <select id="selDataset" class="custom-select""></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title" style="margin-top: 10px;">Hospital Info</h3>
+            <h3 class="panel-title" style="margin-top: 10px;">Network Info</h3>
           </div>
           <div id="hospital-data" class="panel-body"></div>
         </div>
@@ -70,9 +61,19 @@
       </div>
     </div>
     <div class="row">
+      <div class= "col-md-12" id="buttons">
+        <button class="graphSelect" type="button", onClick="toggle(0)">NMHS</button>
+        <button class="graphSelect" type="button", onClick="toggle(1)">SMHS</button>
+        <button class="graphSelect" type="button", onClick="toggle(2)">EMHS</button>
+        <button class="graphSelect" type="button", onClick="toggle(3)">CAHS</button>
+        <button class="graphSelect" type="button", onClick="toggle(4)">Metro</button>
+        <button class="graphSelect" type="button", onClick="toggle(5)">Regional</button>
+        <button class="graphSelect" type="button", onClick="toggle(6)">State</button>
+        <button class="graphSelect" type="button", onClick="toggle(7)">Clear</button>
+      </div>
       <div class="col-md-12">
         <div id="line"></div>
-      </div>
+        </div>
     </div>
   </div>
 
@@ -94,7 +95,7 @@
   var data = {{ data|tojson }};
   var manifold_data = {{manifold_data|tojson}}
   var purchase_data = {{purchase_data|tojson}}
-  loadData(data, manifold_data, purchase_data)
+  loadData(data, purchase_data)
 </script>
 
   

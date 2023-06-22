@@ -353,5 +353,28 @@ def submitEdit():
     return(jsonify(return_data))
 
 
+@app.route("/compare")
+def compare():
+
+    hosp_query = Hospitals.query.all()
+    data = [u.__dict__ for u in hosp_query]
+    for row in data:
+        del row['_sa_instance_state']  
+
+    manifold_query = Manifolds.query.all()
+    manifold_data = [u.__dict__ for u in manifold_query]
+    for row in manifold_data:
+        del row['_sa_instance_state']
+   
+    purchase_query = Purchases.query.all()
+    purchase_data = [u.__dict__ for u in purchase_query]
+    for row in purchase_data:
+        del row['_sa_instance_state']
+
+
+    # Return template and data
+    return render_template("compare.html", data=data, manifold_data=manifold_data, purchase_data=purchase_data)  
+
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
